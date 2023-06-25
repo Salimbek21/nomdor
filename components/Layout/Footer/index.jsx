@@ -1,6 +1,6 @@
 import cls from "./footer.module.scss";
 import Image from "next/image";
-import footerLogo from "@/public/assets/icon/logo.svg";
+import footerLogo from "@/public/Logo2.png";
 import appstore from "@/public/assets/icon/appstore.svg";
 import googleplay from "@/public/assets/icon/googleplay.svg";
 import { FacebookIcon, InstagramIcon, TelegramIcon } from "@/components/svg";

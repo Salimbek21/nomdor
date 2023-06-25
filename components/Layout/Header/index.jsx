@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import cls from "./header.module.scss";
-import logo from "@/public/assets/icon/logo.svg";
+import logo from "@/public/Logo2.png";
 import basket from "@/public/assets/icon/basket.svg";
 import uz from "@/public/assets/icon/uz.svg";
 import ru from "@/public/assets/icon/ru.svg";
@@ -29,7 +29,7 @@ const Header = () => {
 					<div className={cls.left}>
 						<div className={cls.logo}>
 							<Image src={logo} alt="logo"/>
-							<div className={cls.vaqtinchalik}>EVOS</div>
+							{/* <div className={cls.vaqtinchalik}>EVOS</div> */}
 						</div>
 						<ul className={cls.nav_items}>
 							<li className={cls.nav_item}>
