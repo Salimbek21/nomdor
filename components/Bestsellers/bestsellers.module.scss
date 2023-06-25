@@ -1,0 +1,60 @@
+.bestsellers_wrapper {
+	.title {
+		font-size: 40px;
+		font-weight: 700;
+		line-height: 1.2;
+		letter-spacing: 0.41px;
+		text-align: center;
+		color: #000000;
+		margin-top: 48px;
+		margin-bottom: 80px;
+
+		@media (max-width: 576px) {
+			font-size: 20px;
+			padding-top: 0;
+			margin-top: 0;
+			margin-bottom: 40px;
+		}
+	}
+
+	.seller_swiper_slide {
+		width: 100%;
+		max-width: 300px;
+		margin: 0;
+		background: #ffffff;
+	}
+
+	.banner_navigation {
+		display: flex;
+		justify-content: center;
+		column-gap: 16px;
+		padding-top: 80px;
+		padding-bottom: 10px;
+
+		.btn {
+			display: inline-flex;
+			justify-content: center;
+			align-items: center;
+			width: 36px;
+			height: 36px;
+			cursor: pointer;
+			outline: 0;
+			background: rgba(255, 255, 255, 0.62);
+			box-shadow: 0 4.4px 12px -1px rgba(19, 16, 34, 0.06),
+				0 2px 6.4px -1px rgba(19, 16, 34, 0.03);
+			border-radius: 40px;
+			border: none;
+			outline: none;
+
+			svg {
+				display: flex;
+				width: 11px;
+				height: 20px;
+				font-size: 1.5rem;
+				transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+				color: #3e4265;
+				flex-shrink: 0;
+			}
+		}
+	}
+}

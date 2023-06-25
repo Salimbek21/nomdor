@@ -18,238 +18,238 @@ import Image from "next/image";
 import Link from "next/link";
 
 const Hero = () => {
-  return (
-    <>
-      <div className={cls.wrapper}>
-        <div className="container">
-          <Swiper
-            spaceBetween={30}
-            loop={true}
-            centeredSlides={true}
-            autoplay={{
-              delay: 25000,
-              disableOnInteraction: false,
-            }}
-            navigation={{
-              prevEl: `.${cls.prev_button}`,
-              nextEl: `.${cls.next_button}`,
-            }}
-            modules={[Autoplay, Navigation]}
-            className="mySwiper"
-          >
-            <SwiperSlide className={cls.swiper_item}>
-              <div className={cls.left}>
-                <div className={cls.box}>
-                  <div className={cls.info}>
-                    <h2 className={cls.title}>Вкусно. Быстро. Качественно.</h2>
-                    <div className={cls.banner_icons}>
-                      <Image src={bannerIcon1} />
-                      <Image src={bannerIcon2} />
-                      <Image src={bannerIcon3} />
-                      <Image src={bannerIcon4} />
-                      <Image src={bannerIcon5} />
-                    </div>
-                    <div className={cls.desc}>
-                      Любимые блюда и восточное гостеприимство
-                    </div>
-                  </div>
-                  <div className={cls.btn_review}>
-                    <div className={cls.btn_box}>
-                      <Link href="#">
-                        <button className={cls.btn_head}>Наше меню</button>
-                      </Link>
-                      <Link href="#">
-                        <button className={`${cls.btn_head} ${cls.btn_head1}`}>
-                          APP Evos
-                          <svg
-                            focusable="false"
-                            aria-hidden="true"
-                            viewBox="0 0 24 24"
-                            data-testid="ArrowForwardIcon"
-                          >
-                            <path
-                              fill="#ffffff"
-                              d="m12 4-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
-                            ></path>
-                          </svg>
-                        </button>
-                      </Link>
-                    </div>
-                    <div className={cls.user_box}>
-                      <div className={cls.user_imgs}>
-                        <Image src={user1} />
-                        <Image src={user2} />
-                        <Image src={user3} />
-                      </div>
-                      <div className={cls.user_info}>
-                        <span>200K+</span> положительных отзывов каждый месяц
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className={cls.right}>
-                <div className={cls.img_wrapper}>
-                  <div className={cls.img_box}>
-                    <Image src={morojenoe} />
-                  </div>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide className={cls.swiper_item}>
-              <div className={cls.left}>
-                <div className={cls.box}>
-                  <div className={cls.info}>
-                    <h2 className={cls.title}>Вкусно. Быстро. Качественно.</h2>
-                    <div className={cls.banner_icons}>
-                      <Image src={bannerIcon1} />
-                      <Image src={bannerIcon2} />
-                      <Image src={bannerIcon3} />
-                      <Image src={bannerIcon4} />
-                      <Image src={bannerIcon5} />
-                    </div>
-                    <div className={cls.desc}>
-                      Любимые блюда и восточное гостеприимство
-                    </div>
-                  </div>
-                  <div className={cls.btn_review}>
-                    <div className={cls.btn_box}>
-                      <Link href="#">
-                        <button className={cls.btn_head}>Наше меню</button>
-                      </Link>
-                      <Link href="#">
-                        <button className={`${cls.btn_head} ${cls.btn_head1}`}>
-                          APP Evos
-                          <svg
-                            focusable="false"
-                            aria-hidden="true"
-                            viewBox="0 0 24 24"
-                            data-testid="ArrowForwardIcon"
-                          >
-                            <path
-                              fill="#ffffff"
-                              d="m12 4-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
-                            ></path>
-                          </svg>
-                        </button>
-                      </Link>
-                    </div>
-                    <div className={cls.user_box}>
-                      <div className={cls.user_imgs}>
-                        <Image src={user1} />
-                        <Image src={user2} />
-                        <Image src={user3} />
-                      </div>
-                      <div className={cls.user_info}>
-                        <span>200K+</span> положительных отзывов каждый месяц
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className={cls.right}>
-                <div className={cls.img_wrapper}>
-                  <div className={cls.img_box}>
-                    <Image src={morojenoe} />
-                  </div>
-                </div>
-              </div>
-            </SwiperSlide>
-          </Swiper>
-          <div className={cls.banner_navigation}>
-            <button className={`${cls.btn} ${cls.prev_button}`}>
-              <svg
-                focusable="false"
-                aria-hidden="true"
-                viewBox="0 0 24 24"
-                data-testid="ArrowBackIosIcon"
-              >
-                <path d="M11.67 3.87 9.9 2.1 0 12l9.9 9.9 1.77-1.77L3.54 12z"></path>
-              </svg>
-            </button>
-            <button className={`${cls.btn} ${cls.next_button}`}>
-              <svg
-                focusable="false"
-                aria-hidden="true"
-                viewBox="0 0 24 24"
-                data-testid="ArrowForwardIosIcon"
-              >
-                <path d="M6.23 20.23 8 22l10-10L8 2 6.23 3.77 14.46 12z"></path>
-              </svg>
-            </button>
-          </div>
-        </div>
-      </div>
-      <div className={cls.menu_bottom}>
-        <div className="container">
-          <div className={cls.menu_listTop}>
-            <ul className={cls.menu_list}>
-              <li className={cls.menu_item}>
-                <a className={cls.menu_link} href="#">
-                  Хиты продаж
-                </a>
-              </li>
-              <li className={cls.menu_item}>
-                <a className={cls.menu_link} href="#">
-                  Американо
-                </a>
-              </li>
-              <li className={cls.menu_item}>
-                <a className={cls.menu_link} href="#">
-                  Лаваш
-                </a>
-              </li>
-              <li className={cls.menu_item}>
-                <a className={cls.menu_link} href="#">
-                  Капучино
-                </a>
-              </li>
-              <li className={cls.menu_item}>
-                <a className={cls.menu_link} href="#">
-                  Латте
-                </a>
-              </li>
-              <li className={cls.menu_item}>
-                <a className={cls.menu_link} href="#">
-                  Шаурма
-                </a>
-              </li>
-              <li className={cls.menu_item}>
-                <a className={cls.menu_link} href="#">
-                  Бургеры
-                </a>
-              </li>
-              <li className={cls.menu_item}>
-                <a className={cls.menu_link} href="#">
-                  Хот-Дог
-                </a>
-              </li>
-              <li className={cls.menu_item}>
-                <a className={cls.menu_link} href="#">
-                  Блюда
-                </a>
-              </li>
-              <li className={cls.menu_item}>
-                <a className={cls.menu_link} href="#">
-                  COMBO
-                </a>
-              </li>
-              <li className={cls.menu_item}>
-                <a className={cls.menu_link} href="#">
-                  Десерты
-                </a>
-              </li>
-              <li className={cls.menu_item}>
-                <a className={cls.menu_link} href="#">
-                  Соусы, добавки
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </>
-  );
+	return (
+		<>
+			<div className={cls.wrapper}>
+				<div className="container">
+					<Swiper
+						spaceBetween={30}
+						loop={true}
+						centeredSlides={true}
+						autoplay={{
+							delay: 2500,
+							disableOnInteraction: false,
+						}}
+						navigation={{
+							prevEl: `.${cls.prev_button}`,
+							nextEl: `.${cls.next_button}`,
+						}}
+						modules={[Autoplay, Navigation]}
+						className="mySwiper"
+					>
+						<SwiperSlide className={cls.swiper_item}>
+							<div className={cls.left}>
+								<div className={cls.box}>
+									<div className={cls.info}>
+										<h2 className={cls.title}>Вкусно. Быстро. Качественно.</h2>
+										<div className={cls.banner_icons}>
+											<Image src={bannerIcon1} />
+											<Image src={bannerIcon2} />
+											<Image src={bannerIcon3} />
+											<Image src={bannerIcon4} />
+											<Image src={bannerIcon5} />
+										</div>
+										<div className={cls.desc}>
+											Любимые блюда и восточное гостеприимство
+										</div>
+									</div>
+									<div className={cls.btn_review}>
+										<div className={cls.btn_box}>
+											<Link href="#">
+												<button className={cls.btn_head}>Наше меню</button>
+											</Link>
+											<Link href="#">
+												<button className={`${cls.btn_head} ${cls.btn_head1}`}>
+													APP Evos
+													<svg
+														focusable="false"
+														aria-hidden="true"
+														viewBox="0 0 24 24"
+														data-testid="ArrowForwardIcon"
+													>
+														<path
+															fill="#ffffff"
+															d="m12 4-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
+														></path>
+													</svg>
+												</button>
+											</Link>
+										</div>
+										<div className={cls.user_box}>
+											<div className={cls.user_imgs}>
+												<Image src={user1} />
+												<Image src={user2} />
+												<Image src={user3} />
+											</div>
+											<div className={cls.user_info}>
+												<span>200K+</span> положительных отзывов каждый месяц
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div className={cls.right}>
+								<div className={cls.img_wrapper}>
+									<div className={cls.img_box}>
+										<Image src={morojenoe} />
+									</div>
+								</div>
+							</div>
+						</SwiperSlide>
+						<SwiperSlide className={cls.swiper_item}>
+							<div className={cls.left}>
+								<div className={cls.box}>
+									<div className={cls.info}>
+										<h2 className={cls.title}>Вкусно. Быстро. Качественно.</h2>
+										<div className={cls.banner_icons}>
+											<Image src={bannerIcon1} />
+											<Image src={bannerIcon2} />
+											<Image src={bannerIcon3} />
+											<Image src={bannerIcon4} />
+											<Image src={bannerIcon5} />
+										</div>
+										<div className={cls.desc}>
+											Любимые блюда и восточное гостеприимство
+										</div>
+									</div>
+									<div className={cls.btn_review}>
+										<div className={cls.btn_box}>
+											<Link href="#">
+												<button className={cls.btn_head}>Наше меню</button>
+											</Link>
+											<Link href="#">
+												<button className={`${cls.btn_head} ${cls.btn_head1}`}>
+													APP Evos
+													<svg
+														focusable="false"
+														aria-hidden="true"
+														viewBox="0 0 24 24"
+														data-testid="ArrowForwardIcon"
+													>
+														<path
+															fill="#ffffff"
+															d="m12 4-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
+														></path>
+													</svg>
+												</button>
+											</Link>
+										</div>
+										<div className={cls.user_box}>
+											<div className={cls.user_imgs}>
+												<Image src={user1} />
+												<Image src={user2} />
+												<Image src={user3} />
+											</div>
+											<div className={cls.user_info}>
+												<span>200K+</span> положительных отзывов каждый месяц
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div className={cls.right}>
+								<div className={cls.img_wrapper}>
+									<div className={cls.img_box}>
+										<Image src={morojenoe} />
+									</div>
+								</div>
+							</div>
+						</SwiperSlide>
+					</Swiper>
+					<div className={cls.banner_navigation}>
+						<button className={`${cls.btn} ${cls.prev_button}`}>
+							<svg
+								focusable="false"
+								aria-hidden="true"
+								viewBox="0 0 24 24"
+								data-testid="ArrowBackIosIcon"
+							>
+								<path d="M11.67 3.87 9.9 2.1 0 12l9.9 9.9 1.77-1.77L3.54 12z"></path>
+							</svg>
+						</button>
+						<button className={`${cls.btn} ${cls.next_button}`}>
+							<svg
+								focusable="false"
+								aria-hidden="true"
+								viewBox="0 0 24 24"
+								data-testid="ArrowForwardIosIcon"
+							>
+								<path d="M6.23 20.23 8 22l10-10L8 2 6.23 3.77 14.46 12z"></path>
+							</svg>
+						</button>
+					</div>
+				</div>
+			</div>
+			<div className={cls.menu_bottom}>
+				<div className="container">
+					<div className={cls.menu_listTop}>
+						<ul className={cls.menu_list}>
+							<li className={cls.menu_item}>
+								<Link className={cls.menu_link} href="#">
+									Хиты продаж
+								</Link>
+							</li>
+							<li className={cls.menu_item}>
+								<Link className={cls.menu_link} href="#">
+									Американо
+								</Link>
+							</li>
+							<li className={cls.menu_item}>
+								<Link className={cls.menu_link} href="#">
+									Лаваш
+								</Link>
+							</li>
+							<li className={cls.menu_item}>
+								<Link className={cls.menu_link} href="#">
+									Капучино
+								</Link>
+							</li>
+							<li className={cls.menu_item}>
+								<Link className={cls.menu_link} href="#">
+									Латте
+								</Link>
+							</li>
+							<li className={cls.menu_item}>
+								<Link className={cls.menu_link} href="#">
+									Шаурма
+								</Link>
+							</li>
+							<li className={cls.menu_item}>
+								<Link className={cls.menu_link} href="#">
+									Бургеры
+								</Link>
+							</li>
+							<li className={cls.menu_item}>
+								<Link className={cls.menu_link} href="#">
+									Хот-Дог
+								</Link>
+							</li>
+							<li className={cls.menu_item}>
+								<Link className={cls.menu_link} href="#">
+									Блюда
+								</Link>
+							</li>
+							<li className={cls.menu_item}>
+								<Link className={cls.menu_link} href="#">
+									COMBO
+								</Link>
+							</li>
+							<li className={cls.menu_item}>
+								<Link className={cls.menu_link} href="#">
+									Десерты
+								</Link>
+							</li>
+							<li className={cls.menu_item}>
+								<Link className={cls.menu_link} href="#">
+									Соусы, добавки
+								</Link>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</>
+	);
 };
 
 export default Hero;

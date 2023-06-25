@@ -5,15 +5,17 @@ import { data } from "@/shared/data";
 import Product from "@/components/Product";
 import ProductSecond from "@/components/ProductSecond";
 import Hero from "@/components/Hero";
+import Bestsellers from "@/components/Bestsellers";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
-  return (
-    <>
-      <Hero />
-      <Product data={data} />
-      <ProductSecond data={data} />
-    </>
-  );
+	return (
+		<>
+			<Hero />
+			<Bestsellers data={data} />
+			<Product data={data} />
+			<ProductSecond data={data} />
+		</>
+	);
 }

@@ -1,0 +1,149 @@
+.footer_wrapper {
+	padding: 50px 0;
+	margin-top: 100px;
+	background-color: #ebedf8;
+
+	@media (max-width: 1200px) {
+		padding: 38px 0 41px;
+	}
+
+	.footer_box {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding-bottom: 52px;
+		border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+		@media (max-width: 1200px) {
+			flex-direction: column;
+			align-items: flex-start;
+		}
+
+		@media (max-width: 1200px) {
+			.footer_logo {
+				order: 1;
+			}
+		}
+
+		.footer_nav {
+			display: flex;
+			align-items: center;
+			margin-right: 50px;
+
+			@media (max-width: 1200px) {
+				flex-direction: column;
+				align-items: flex-start;
+				max-height: 200px;
+				flex-wrap: wrap;
+				column-gap: 60px;
+				margin-top: 35px;
+				order: 3;
+			}
+
+			@media (max-width: 990px) {
+				display: none;
+			}
+
+			.footer_item {
+				font-size: 17px;
+				font-weight: 500;
+				line-height: 1.3;
+				letter-spacing: 0.41px;
+				white-space: nowrap;
+				color: #000000;
+				padding: 10px 12px;
+
+				.footer_link {
+					display: block;
+				}
+			}
+		}
+
+		.footer_list {
+			@media (max-width: 1200px) {
+				order: 2;
+				margin-top: 20px;
+			}
+
+			.list_items {
+				display: flex;
+
+				.list_item {
+					a {
+						display: block;
+						font-size: 17px;
+						line-height: 1.3;
+						letter-spacing: 0.41px;
+						padding-right: 24px;
+						white-space: nowrap;
+					}
+
+					@media (max-width: 415px) {
+						a {
+							img {
+								width: 150px;
+								object-fit: contain;
+							}
+						}
+					}
+
+					@media (max-width: 355px) {
+						a {
+							img {
+								width: 120px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.footer_socialBox {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 24px;
+
+		@media (max-width: 1200px) {
+			flex-direction: column-reverse;
+			row-gap: 20px;
+		}
+
+		.footer_text {
+			font-size: 17px;
+			font-weight: 500;
+			line-height: 1.3;
+			color: #000000;
+		}
+
+		.footer_socials {
+			display: flex;
+			align-items: center;
+
+			.social_item {
+				.social_link {
+					display: block;
+					font-size: 17px;
+					line-height: 1.3;
+					letter-spacing: 0.41px;
+					margin-right: 24px;
+					white-space: nowrap;
+				}
+			}
+		}
+	}
+
+	.footer_offert {
+		@media (max-width: 1200px) {
+			margin-top: 30px;
+		}
+
+		.offert_link {
+			font-size: 10px;
+			font-weight: 550;
+			line-height: 2.2;
+			letter-spacing: 0.41px;
+			color: #309b42;
+		}
+	}
+}
