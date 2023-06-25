@@ -1,185 +1,255 @@
 .wrapper {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  background-color: #ffffff;
-  box-shadow: inset 0 -1px 0 #e5e5e5;
+	width: 100%;
+	position: relative;
+	display: flex;
+	align-items: center;
+	background-color: #ffffff;
+	box-shadow: inset 0 -1px 0 #e5e5e5;
 
-  @media (max-width: 640px) {
-    background-color: #309b42;
-  }
+	@media (max-width: 640px) {
+		background-color: #309b42;
+	}
 
-  .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 22px;
-    padding-bottom: 22px;
+	.header {
+		position: relative;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding-top: 22px;
+		padding-bottom: 22px;
 
-    @media (max-width: 576px) {
-      padding-top: 10px;
-      padding-bottom: 10px;
-    }
+		@media (max-width: 576px) {
+			padding-top: 10px;
+			padding-bottom: 10px;
+		}
 
-    .left {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      column-gap: 100px;
+		.left {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			column-gap: 100px;
 
-      .vaqtinchalik {
-        display: none;
-        font-size: 40px;
-        font-weight: 600;
-        color: #ffffff;
+			.vaqtinchalik {
+				display: none;
+				font-size: 40px;
+				font-weight: 600;
+				color: #ffffff;
 
-        @media (max-width: 640px) {
-          display: block;
-        }
-      }
+				@media (max-width: 640px) {
+					display: block;
+				}
+			}
 
-      @media (max-width: 640px) {
-        .logo img {
-          display: none;
-        }
+			@media (max-width: 640px) {
+				.logo img {
+					display: none;
+				}
 
-        .logo {
-          content: "NJWNEF";
-          color: #ffffff;
-        }
-      }
+				.logo {
+					content: "NJWNEF";
+					color: #ffffff;
+				}
+			}
 
-      .nav_items {
-        display: flex;
-        align-items: center;
+			.nav_items {
+				display: flex;
+				align-items: center;
 
-        .nav_item {
-          font-size: 16px;
-          font-weight: 400;
-          line-height: 175%;
-          font-family: Helvetica, sans-serif;
-          white-space: nowrap;
-          color: #000000 !important;
+				.nav_item {
+					font-size: 16px;
+					font-weight: 400;
+					line-height: 175%;
+					font-family: Helvetica, sans-serif;
+					white-space: nowrap;
+					color: #000000 !important;
 
-          .nav_link {
-            display: block;
-            padding: 10px 8px;
-            border-bottom: 2px solid transparent;
-          }
-        }
-      }
+					.nav_link {
+						display: block;
+						padding: 10px 8px;
+						border-bottom: 2px solid transparent;
+					}
+				}
+			}
 
-      @media (max-width: 1200px) {
-        .nav_items {
-          display: none;
-        }
-      }
-    }
+			@media (max-width: 1200px) {
+				.nav_items {
+					display: none;
+				}
+			}
+		}
 
-    .right {
-      .buttons {
-        display: flex;
-        align-items: center;
+		.right {
+			.buttons {
+				display: flex;
+				align-items: center;
 
-        .qrApp {
-          font-size: 17px;
-          font-weight: 500;
-          color: #ffffff;
-          padding: 13px 29px;
-          margin-left: 70px;
-          margin-right: 16px;
-          background: #309b42;
-          border: none;
-          border-radius: 4px;
-          outline: none;
-          cursor: pointer;
-          white-space: nowrap;
-        }
+				.qrApp {
+					font-size: 17px;
+					font-weight: 500;
+					color: #ffffff;
+					padding: 13px 29px;
+					margin-left: 70px;
+					margin-right: 16px;
+					background: #309b42;
+					border: none;
+					border-radius: 4px;
+					outline: none;
+					cursor: pointer;
+					white-space: nowrap;
+				}
 
-        .basket {
-          display: block;
+				.basket {
+					display: block;
 
-          .basket_btn {
-            display: flex;
-            align-items: center;
-            padding: 12px;
-            margin-right: 16px;
-            background-color: #f6f8f9;
-            border-radius: 4px;
-            cursor: pointer;
-            color: #000000;
-            border: none;
-            outline: none;
+					.basket_btn {
+						display: flex;
+						align-items: center;
+						padding: 12px;
+						margin-right: 16px;
+						background-color: #f6f8f9;
+						border-radius: 4px;
+						cursor: pointer;
+						color: #000000;
+						border: none;
+						outline: none;
 
-            img {
-              width: 24px;
-              height: 24px;
-            }
+						img {
+							width: 24px;
+							height: 24px;
+						}
 
-            .basket_text {
-              font-size: 17px;
-              font-weight: 500;
-              line-height: 1.3;
-              margin-left: 12px;
-            }
-          }
-        }
+						.basket_text {
+							font-size: 17px;
+							font-weight: 500;
+							line-height: 1.3;
+							margin-left: 12px;
+						}
+					}
+				}
 
-        .change_language {
-          display: flex;
-          align-items: flex-start;
-          align-self: center;
-          background-color: #f6f8f9;
-          padding: 11px;
-          margin-right: 16px;
-          border-radius: 4px;
-          cursor: pointer;
+				.change_language {
+					display: flex;
+					align-items: flex-start;
+					align-self: center;
+					background-color: #f6f8f9;
+					padding: 11px;
+					margin-right: 16px;
+					border-radius: 4px;
+					cursor: pointer;
+					transition: max-height 0.5s ease-out;
 
-          .arrow {
-            margin-left: 12px;
-            cursor: pointer;
+					.arrow {
+						margin-left: 12px;
+						cursor: pointer;
 
-            svg {
-              transition: transform 0.3s ease-out;
-            }
-          }
+						svg {
+							transition: transform 0.3s ease-out;
+						}
+					}
 
-          &:hover .arrow svg {
-            transform: rotate(180deg);
-          }
-        }
+					&:hover .arrow svg {
+						transform: rotate(180deg);
+					}
 
-        .user {
-          padding: 10px 12px;
-          background: #f6f8f9;
-          border-radius: 4px;
-          cursor: pointer;
-        }
+					.languages_wrapper {
+						position: absolute;
+						cursor: default;
+						top: 70px;
+						right: 30px;
+						padding: 30px;
+						width: 300px;
+						transition: max-height 0.5s ease-out;
+						display: none;
 
-        .burger_menu {
-          display: none;
-          background-color: #f6f8f9;
-          padding: 9px 11px 5px;
-          border-radius: 4px;
-        }
+						.langlist {
+							display: flex;
+							flex-direction: column;
+							cursor: default;
+							width: 100%;
+							box-shadow: 0 8px 16px rgba(0, 0, 0, 0.06);
+							background: #fff;
+							position: relative;
+							z-index: 9999;
+							border-radius: 4px;
+							padding: 16px;
 
-        @media (max-width: 640px) {
-          .qrApp,
-          .change_language,
-          .basket .basket_btn .basket_text,
-          .user {
-            display: none;
-          }
+							&::before {
+								content: "";
+								position: absolute;
+								width: 0;
+								height: 0;
+								border-bottom: 15px solid #fff;
+								border-left: 15px solid transparent;
+								border-right: 15px solid transparent;
+								top: -13px;
+								right: 15px;
+							}
 
-          .basket .basket_btn {
-            padding: 8px 12px;
-          }
+							.lang_list {
+								width: 100%;
+								display: flex;
+								padding: 13px 12px;
+								cursor: pointer;
 
-          .burger_menu {
-            display: block;
-          }
-        }
-      }
-    }
-  }
+								&:hover {
+									background-color: #f6f8f9;
+								}
+
+								img {
+									width: 24px;
+									height: 24px;
+								}
+
+								.lang_text {
+									font-size: 17px;
+									font-weight: 500;
+									line-height: 1.3;
+									letter-spacing: 0.41px;
+									color: rgb(0, 0, 0);
+									margin: 0px 0px 0px 16px;
+									text-align: left;
+								}
+							}
+						}
+					}
+
+					&:hover .languages_wrapper {
+						display: flex;
+					}
+				}
+
+				.user {
+					padding: 10px 12px;
+					background: #f6f8f9;
+					border-radius: 4px;
+					cursor: pointer;
+				}
+
+				.burger_menu {
+					display: none;
+					background-color: #f6f8f9;
+					padding: 9px 11px 5px;
+					border-radius: 4px;
+					cursor: pointer;
+				}
+
+				@media (max-width: 640px) {
+					.qrApp,
+					.change_language,
+					.basket .basket_btn .basket_text,
+					.user {
+						display: none;
+					}
+
+					.basket .basket_btn {
+						padding: 8px 12px;
+					}
+
+					.burger_menu {
+						display: block;
+					}
+				}
+			}
+		}
+	}
 }

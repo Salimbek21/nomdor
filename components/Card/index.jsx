@@ -9,7 +9,7 @@ export default function Card({ innerData }) {
 			{innerData.data.map((item) => (
 				<Link href={"#"} className={cls.card} key={item.id}>
 					<span className={cls.card_img}>
-						<Image src={item.img} />
+						<Image src={item.img} alt="Card img" />
 					</span>
 					<div className={cls.product_body}>
 						<div className={cls.product_texts}>

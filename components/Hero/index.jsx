@@ -43,11 +43,11 @@ const Hero = () => {
 									<div className={cls.info}>
 										<h2 className={cls.title}>Вкусно. Быстро. Качественно.</h2>
 										<div className={cls.banner_icons}>
-											<Image src={bannerIcon1} />
-											<Image src={bannerIcon2} />
-											<Image src={bannerIcon3} />
-											<Image src={bannerIcon4} />
-											<Image src={bannerIcon5} />
+											<Image src={bannerIcon1} alt="banner icon" />
+											<Image src={bannerIcon2} alt="banner icon" />
+											<Image src={bannerIcon3} alt="banner icon" />
+											<Image src={bannerIcon4} alt="banner icon" />
+											<Image src={bannerIcon5} alt="banner icon" />
 										</div>
 										<div className={cls.desc}>
 											Любимые блюда и восточное гостеприимство
@@ -77,9 +77,9 @@ const Hero = () => {
 										</div>
 										<div className={cls.user_box}>
 											<div className={cls.user_imgs}>
-												<Image src={user1} />
-												<Image src={user2} />
-												<Image src={user3} />
+												<Image src={user1} alt="user" />
+												<Image src={user2} alt="user" />
+												<Image src={user3} alt="user" />
 											</div>
 											<div className={cls.user_info}>
 												<span>200K+</span> положительных отзывов каждый месяц
@@ -91,7 +91,7 @@ const Hero = () => {
 							<div className={cls.right}>
 								<div className={cls.img_wrapper}>
 									<div className={cls.img_box}>
-										<Image src={morojenoe} />
+										<Image src={morojenoe} alt="morojenoe" />
 									</div>
 								</div>
 							</div>
@@ -102,11 +102,11 @@ const Hero = () => {
 									<div className={cls.info}>
 										<h2 className={cls.title}>Вкусно. Быстро. Качественно.</h2>
 										<div className={cls.banner_icons}>
-											<Image src={bannerIcon1} />
-											<Image src={bannerIcon2} />
-											<Image src={bannerIcon3} />
-											<Image src={bannerIcon4} />
-											<Image src={bannerIcon5} />
+											<Image src={bannerIcon1} alt="banner icon" />
+											<Image src={bannerIcon2} alt="banner icon" />
+											<Image src={bannerIcon3} alt="banner icon" />
+											<Image src={bannerIcon4} alt="banner icon" />
+											<Image src={bannerIcon5} alt="banner icon" />
 										</div>
 										<div className={cls.desc}>
 											Любимые блюда и восточное гостеприимство
@@ -136,9 +136,9 @@ const Hero = () => {
 										</div>
 										<div className={cls.user_box}>
 											<div className={cls.user_imgs}>
-												<Image src={user1} />
-												<Image src={user2} />
-												<Image src={user3} />
+												<Image src={user1} alt="user" />
+												<Image src={user2} alt="user" />
+												<Image src={user3} alt="user" />
 											</div>
 											<div className={cls.user_info}>
 												<span>200K+</span> положительных отзывов каждый месяц
@@ -150,7 +150,7 @@ const Hero = () => {
 							<div className={cls.right}>
 								<div className={cls.img_wrapper}>
 									<div className={cls.img_box}>
-										<Image src={morojenoe} />
+										<Image src={morojenoe} alt="morojenoe" />
 									</div>
 								</div>
 							</div>
