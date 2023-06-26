@@ -2,7 +2,7 @@ import Card from "../Card";
 import cls from "../../styles/product.module.scss";
 
 export default function ProductSecond(props) {
-	console.log(props, "props");
+	// console.log(props, "props");
 	return (
 		<>
 			<div className="container">
