@@ -29,7 +29,6 @@ const Header = () => {
 					<div className={cls.left}>
 						<div className={cls.logo}>
 							<Image src={logo} alt="logo"/>
-							{/* <div className={cls.vaqtinchalik}>EVOS</div> */}
 						</div>
 						<ul className={cls.nav_items}>
 							<li className={cls.nav_item}>
@@ -38,7 +37,7 @@ const Header = () => {
 								</Link>
 							</li>
 							<li className={cls.nav_item}>
-								<Link className={cls.nav_link} href="#">
+								<Link className={cls.nav_link} href="/branches">
 									Филиалы
 								</Link>
 							</li>
