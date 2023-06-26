@@ -1,0 +1,1 @@
+export const url = `https://nomdor-dashboard.onrender.com/api`
