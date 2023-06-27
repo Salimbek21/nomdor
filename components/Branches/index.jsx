@@ -11,7 +11,6 @@ const Branches = () => {
           <h1 className={cls.title}>Филиалы</h1>
           <div className={cls.btn_group}>
             <button className={cls.btn_list}>Список</button>
-            <button className={cls.btn_map}>Карта</button>
           </div>
         </div>
         <div className={cls.cards}>

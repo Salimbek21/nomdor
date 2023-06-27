@@ -17,7 +17,7 @@
       letter-spacing: 0.41px;
       color: #000000;
 
-      @media (max-width: 640px) {
+      @media (max-width: 460px) {
         display: none;
       }
     }
@@ -35,20 +35,17 @@
         border: none;
         outline: none;
         color: #fff;
-        margin-right: 24px;
         border-radius: 4px;
         background-color: #309b42;
         cursor: pointer;
+
+        &:active {
+          background-color: #309b42;
+          color: #ffffff;
+        }
       }
 
-      .btn_map {
-        @extend .btn_list;
-        color: #000000;
-        background-color: #ffffff;
-        margin-right: 0;
-      }
-
-      @media (max-width: 640px) {
+      @media (max-width: 460px) {
         width: 100%;
 
         .btn_list {

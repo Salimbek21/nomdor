@@ -45,7 +45,7 @@ const MobileHeader = ({ closeNav }) => {
             </Link>
           </div>
           <div onClick={() => closeNav(false)} className={cls.mobile_list}>
-            <Link className={cls.mobile_link} href="#">
+            <Link className={cls.mobile_link} href="/jobs">
               <div className={cls.mobile_item}>
                 <JobsIcon />
               </div>
@@ -69,7 +69,7 @@ const MobileHeader = ({ closeNav }) => {
             </Link>
           </div>
           <div onClick={() => closeNav(false)} className={cls.mobile_list}>
-            <Link className={cls.mobile_link} href="#">
+            <Link className={cls.mobile_link} href="/contacts">
               <div className={cls.mobile_item}>
                 <ContactIcon />
               </div>

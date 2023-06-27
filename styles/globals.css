@@ -78,3 +78,10 @@ svg {
 .swiper-3d .swiper-slide-shadow-right {
   background-image: none !important;
 }
+
+.loader {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

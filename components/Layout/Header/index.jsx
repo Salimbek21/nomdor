@@ -42,7 +42,7 @@ const Header = () => {
 								</Link>
 							</li>
 							<li className={cls.nav_item}>
-								<Link className={cls.nav_link} href="#">
+								<Link className={cls.nav_link} href="/jobs">
 									Вакансии
 								</Link>
 							</li>
@@ -57,7 +57,7 @@ const Header = () => {
 								</Link>
 							</li>
 							<li className={cls.nav_item}>
-								<Link className={cls.nav_link} href="#">
+								<Link className={cls.nav_link} href="/contacts">
 									Контакты
 								</Link>
 							</li>
