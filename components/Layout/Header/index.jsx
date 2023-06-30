@@ -29,7 +29,6 @@ const Header = () => {
 					<div className={cls.left}>
 						<div className={cls.logo}>
 							<Image src={logo} alt="logo"/>
-							{/* <div className={cls.vaqtinchalik}>EVOS</div> */}
 						</div>
 						<ul className={cls.nav_items}>
 							<li className={cls.nav_item}>
@@ -38,12 +37,12 @@ const Header = () => {
 								</Link>
 							</li>
 							<li className={cls.nav_item}>
-								<Link className={cls.nav_link} href="#">
+								<Link className={cls.nav_link} href="/branches">
 									Филиалы
 								</Link>
 							</li>
 							<li className={cls.nav_item}>
-								<Link className={cls.nav_link} href="#">
+								<Link className={cls.nav_link} href="/vacancy">
 									Вакансии
 								</Link>
 							</li>
@@ -58,7 +57,7 @@ const Header = () => {
 								</Link>
 							</li>
 							<li className={cls.nav_item}>
-								<Link className={cls.nav_link} href="#">
+								<Link className={cls.nav_link} href="/contacts">
 									Контакты
 								</Link>
 							</li>
@@ -68,10 +67,6 @@ const Header = () => {
 						<div className={cls.buttons}>
 							<button className={cls.qrApp}>QR app</button>
 							<div className={cls.basket}>
-								<button className={cls.basket_btn}>
-									<Image src={basket} alt="basket"/>
-									<p className={cls.basket_text}>Корзина</p>
-								</button>
 							</div>
 							<div className={cls.change_language}>
 								<Image src={ru} alt="russian"/>

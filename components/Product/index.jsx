@@ -1,5 +1,9 @@
 import Card from "../Card";
 import cls from "../../styles/product.module.scss";
+import { url } from "@/api";
+import axios from "axios";
+import { useEffect, useState } from "react";
+import CardLoader from "../CardLoader";
 
 export default function Product({ newData }) {
   console.log(newData, "data");
@@ -26,3 +30,16 @@ export default function Product({ newData }) {
     </>
   );
 }
+
+// export async function getStaticProps() {
+// 	const res = await fetch(`${url}/plovs?populate=plovImage`);
+// 	const data = await res.json();
+
+// 	return {
+// 		props: {
+// 			data,
+// 		},
+
+// 		revalidate: 1,
+// 	};
+// }

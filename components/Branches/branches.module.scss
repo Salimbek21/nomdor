@@ -1,0 +1,204 @@
+.branches_wrapper {
+  margin-top: 56px;
+
+  @media (max-width: 640px) {
+    margin-top: 16px;
+  }
+
+  .head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .title {
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 1.2;
+      letter-spacing: 0.41px;
+      color: #000000;
+
+      @media (max-width: 460px) {
+        display: none;
+      }
+    }
+
+    .btn_group {
+      display: flex;
+      align-items: center;
+
+      .btn_list {
+        font-size: 17px;
+        font-weight: 700;
+        line-height: 1.3;
+        letter-spacing: 0.41px;
+        padding: 17px 49px;
+        border: none;
+        outline: none;
+        color: #fff;
+        border-radius: 4px;
+        background-color: #309b42;
+        cursor: pointer;
+
+        &:active {
+          background-color: #309b42;
+          color: #ffffff;
+        }
+      }
+
+      @media (max-width: 460px) {
+        width: 100%;
+
+        .btn_list {
+          width: 100%;
+        }
+      }
+
+      @media (max-width: 420px) {
+        .btn_list {
+          padding: 8px 22px;
+        }
+      }
+    }
+  }
+
+  .cards {
+    width: 60%;
+    cursor: pointer;
+    margin: 32px 8px 32px 0;
+
+    @media (max-width: 1200px) {
+      width: 100%;
+      margin: 26px 0;
+    }
+
+    .card_wrapper {
+      width: 100%;
+      padding: 32px;
+      background-color: #ffffff;
+      border-radius: 4px;
+
+      @media (max-width: 576px) {
+        padding: 16px;
+      }
+
+      .card {
+        display: flex;
+
+        .card_box {
+          display: flex;
+          align-items: flex-start;
+          flex-basis: 70%;
+
+          @media (max-width: 1200px) {
+            flex-basis: 90%;
+          }
+
+          @media (max-width: 640px) {
+            flex-basis: 95%;
+          }
+
+          .imageBox {
+            width: 95px;
+            height: 70px;
+
+            img {
+              width: 95px;
+              height: 70px;
+            }
+
+            @media (max-width: 1200px) {
+              width: 70px !important;
+              height: 50px;
+              img {
+                width: 70px !important;
+                height: 50px;
+              }
+            }
+          }
+
+          .branch_address {
+            display: flex;
+            flex-direction: column;
+            margin-left: 24px;
+
+            @media (max-width: 420px) {
+              margin-left: 12px;
+            }
+
+            .title {
+              font-size: 22px;
+              font-weight: 500;
+              line-height: 127%;
+              letter-spacing: 0.35px;
+              color: #000000;
+              margin-bottom: 8px;
+
+              @media (max-width: 640px) {
+                font-size: 19px;
+                line-height: 16px;
+              }
+            }
+
+            .desc {
+              max-width: 250px;
+              font-size: 15px;
+              font-weight: 500;
+              line-height: 133%;
+              letter-spacing: 0.24px;
+              color: rgb(91, 104, 113);
+
+              @media (max-width: 640px) {
+                font-size: 14px;
+                line-height: 18px;
+              }
+            }
+          }
+        }
+
+        .card_workingHours {
+          flex-basis: 30%;
+
+          @media (max-width: 1200px) {
+            display: none;
+          }
+
+          .workingBox {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            margin-top: 16px;
+            margin-left: 16px;
+
+            .hour {
+              font-size: 15px;
+              font-weight: 500;
+              line-height: 133%;
+              letter-spacing: 0.24px;
+              color: rgb(176, 186, 191);
+              margin-bottom: 8px;
+            }
+
+            .time {
+              font-size: 17px;
+              font-weight: 500;
+              line-height: 1.3;
+              letter-spacing: 0.00938em;
+              color: rgb(110, 124, 135);
+            }
+          }
+        }
+
+        .card_icon {
+          display: flex;
+          align-items: center;
+          transition: all 0.2s ease-in-out;
+        }
+      }
+
+      &:hover .card .card_icon {
+        transform: translateX(10px);
+      }
+    }
+  }
+}

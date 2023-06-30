@@ -1,5 +1,9 @@
+import { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import cls from "./bestsellers.module.scss";
+import { url } from "@/api";
+import CardLoader from "../CardLoader";
+import axios from "axios";
 
 import "swiper/css";
 import "swiper/css/navigation";

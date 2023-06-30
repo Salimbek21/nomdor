@@ -12,6 +12,8 @@ import Bestsellers from "@/components/Bestsellers";
 const inter = Inter({ subsets: ["latin"] });
 import axios from "axios";
 import { url } from "@/api";
+import ProductThird from "@/components/ProductThird";
+import ProductFourth from "@/components/ProductFourth";
 
 export default function Home({ data1, data2,data3 }) {
   console.log(data2, "DATA");
