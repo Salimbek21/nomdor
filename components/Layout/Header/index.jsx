@@ -32,7 +32,7 @@ const Header = () => {
 						</div>
 						<ul className={cls.nav_items}>
 							<li className={cls.nav_item}>
-								<Link className={cls.nav_link} href="#">
+								<Link className={cls.nav_link} href="/">
 									Главная
 								</Link>
 							</li>
