@@ -46,7 +46,7 @@ export default function Footer() {
 							</Link>
 						</li>
 					</ul>
-					<ul className={cls.footer_list}>
+					{/* <ul className={cls.footer_list}>
 						<div className={cls.list_items}>
 							<li className={cls.list_item}>
 								<Link href="#" target="_blank">
@@ -59,11 +59,11 @@ export default function Footer() {
 								</Link>
 							</li>
 						</div>
-					</ul>
+					</ul> */}
 				</div>
 				<div className={cls.footer_socialBox}>
 					<p className={cls.footer_text}>
-						&copy; Evos 2006 - {new Date().getFullYear()} All Rights Reserved
+						&copy; Nomdor 2021
 					</p>
 					<ul className={cls.footer_socials}>
 						<li className={cls.social_item}>

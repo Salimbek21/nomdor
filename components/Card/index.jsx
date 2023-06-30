@@ -19,9 +19,9 @@ export default function Card(props) {
             </div>
             <h2 className={cls.price}>{props.price} so'm</h2>
           </div>
-          <button className={cls.product_btn}>
+          {/* <button className={cls.product_btn}>
             <h4>В корзину</h4>
-          </button>
+          </button> */}
         </div>
       </Link>
     </div>

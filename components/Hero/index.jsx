@@ -202,49 +202,11 @@ const Hero = () => {
 							</li>
 							<li className={cls.menu_item}>
 								<Link className={cls.menu_link} href="#">
-									Капучино
+								Салаты
+
 								</Link>
 							</li>
-							<li className={cls.menu_item}>
-								<Link className={cls.menu_link} href="#">
-									Латте
-								</Link>
-							</li>
-							<li className={cls.menu_item}>
-								<Link className={cls.menu_link} href="#">
-									Шаурма
-								</Link>
-							</li>
-							<li className={cls.menu_item}>
-								<Link className={cls.menu_link} href="#">
-									Бургеры
-								</Link>
-							</li>
-							<li className={cls.menu_item}>
-								<Link className={cls.menu_link} href="#">
-									Хот-Дог
-								</Link>
-							</li>
-							<li className={cls.menu_item}>
-								<Link className={cls.menu_link} href="#">
-									Блюда
-								</Link>
-							</li>
-							<li className={cls.menu_item}>
-								<Link className={cls.menu_link} href="#">
-									COMBO
-								</Link>
-							</li>
-							<li className={cls.menu_item}>
-								<Link className={cls.menu_link} href="#">
-									Десерты
-								</Link>
-							</li>
-							<li className={cls.menu_item}>
-								<Link className={cls.menu_link} href="#">
-									Соусы, добавки
-								</Link>
-							</li>
+							
 						</ul>
 					</div>
 				</div>
