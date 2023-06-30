@@ -5,13 +5,13 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import CardLoader from "../CardLoader";
 
-export default function ProductSecond() {
+export default function ProductFourth() {
 	const [dataProduct, setDataProduct] = useState(null);
 	useEffect(() => {
 		axios
-			.get(`${url}/salats`, {
+			.get(`${url}/somsas`, {
 				params: {
-					populate: "salatImage",
+					populate: "somsaImage",
 				},
 			})
 			.then((res) => {
@@ -26,7 +26,7 @@ export default function ProductSecond() {
 		<>
 			<div className="container">
 				<div className={cls.product_wrapper}>
-					<div className={cls.product_title}>Салат</div>
+					<div className={cls.product_title}>Cомсу</div>
 					<div className={cls.card_wrapper}>
 						{dataProduct?.length &&
 							dataProduct?.map((item) => (
@@ -35,7 +35,7 @@ export default function ProductSecond() {
 									name={item.attributes.title}
 									description={item.attributes.description}
 									price={item.attributes.price}
-									img={item?.attributes?.salatImage?.data?.attributes?.url}
+									img={item?.attributes?.somsaImage?.data?.attributes?.url}
 								/>
 							))}
 

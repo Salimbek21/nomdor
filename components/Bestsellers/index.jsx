@@ -1,5 +1,9 @@
+import { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import cls from "./bestsellers.module.scss";
+import { url } from "@/api";
+import CardLoader from "../CardLoader";
+import axios from "axios";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -8,7 +12,23 @@ import "swiper/css/effect-coverflow";
 import { Autoplay, Navigation, EffectCoverflow } from "swiper";
 import Card from "../Card";
 
-const Bestsellers = (props) => {
+const Bestsellers = () => {
+	const [dataProduct, setDataProduct] = useState(null);
+	useEffect(() => {
+		axios
+			.get(`${url}/best-sellers`, {
+				params: {
+					populate: "bestSellerImage",
+				},
+			})
+			.then((res) => {
+				setDataProduct(res.data.data);
+			})
+			.catch((err) => {
+				console.error(err);
+			});
+	}, []);
+
 	return (
 		<div className={cls.bestsellers_wrapper}>
 			<div className="container">
@@ -58,42 +78,32 @@ const Bestsellers = (props) => {
 					modules={[EffectCoverflow, Autoplay, Navigation]}
 					className="mySwiper"
 				>
-					<SwiperSlide className={cls.seller_swiper_slide}>
-						<Card innerData={props} />
-					</SwiperSlide>
-					<SwiperSlide className={cls.seller_swiper_slide}>
-						<Card innerData={props} />
-					</SwiperSlide>
-					<SwiperSlide className={cls.seller_swiper_slide}>
-						<Card innerData={props} />
-					</SwiperSlide>
-					<SwiperSlide className={cls.seller_swiper_slide}>
-						<Card innerData={props} />
-					</SwiperSlide>
-					<SwiperSlide className={cls.seller_swiper_slide}>
-						<Card innerData={props} />
-					</SwiperSlide>
-					<SwiperSlide className={cls.seller_swiper_slide}>
-						<Card innerData={props} />
-					</SwiperSlide>
-					<SwiperSlide className={cls.seller_swiper_slide}>
-						<Card innerData={props} />
-					</SwiperSlide>
-					<SwiperSlide className={cls.seller_swiper_slide}>
-						<Card innerData={props} />
-					</SwiperSlide>
-					<SwiperSlide className={cls.seller_swiper_slide}>
-						<Card innerData={props} />
-					</SwiperSlide>
-					<SwiperSlide className={cls.seller_swiper_slide}>
-						<Card innerData={props} />
-					</SwiperSlide>
-					<SwiperSlide className={cls.seller_swiper_slide}>
-						<Card innerData={props} />
-					</SwiperSlide>
-					<SwiperSlide className={cls.seller_swiper_slide}>
-						<Card innerData={props} />
-					</SwiperSlide>
+					{dataProduct?.length &&
+						dataProduct?.map((item) => (
+							<>
+								<SwiperSlide className={cls.seller_swiper_slide}>
+									<Card
+										key={item.id}
+										name={item.attributes.title}
+										description={item.attributes.description}
+										price={item.attributes.price}
+										img={
+											item?.attributes?.bestSellerImage?.data?.attributes?.url
+										}
+									/>
+								</SwiperSlide>
+							</>
+						))}
+					{!dataProduct && (
+						<>
+							<SwiperSlide className={cls.seller_swiper_slide_loader}>
+								<CardLoader />
+								<CardLoader />
+								<CardLoader />
+								<CardLoader />
+							</SwiperSlide>
+						</>
+					)}
 				</Swiper>
 				<div className={cls.banner_navigation}>
 					<button className={`${cls.btn} ${cls.prev_btn}`}>
