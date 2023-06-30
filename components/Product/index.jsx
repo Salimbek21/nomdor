@@ -7,7 +7,7 @@ export default function Product({ newData }) {
     <>
       <div className="container">
         <div className={cls.product_wrapper}>
-          <div className={cls.product_title}>Американо</div>
+          <div className={cls.product_title}>	Ош</div>
 
           {/* {props.newData && props.newData.map} */}
           <div className={cls.card_wrapper}>
@@ -17,7 +17,7 @@ export default function Product({ newData }) {
                   name={item.attributes.title}
                   description={item.attributes.description}
                   price={item.attributes.price}
-                  img={item?.attributes?.img?.data[0]?.attributes?.url}
+                  img={item?.attributes?.plovImage?.data?.attributes?.url}
                 />
               ))}
           </div>

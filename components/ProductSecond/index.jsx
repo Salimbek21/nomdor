@@ -1,21 +1,27 @@
 import Card from "../Card";
 import cls from "../../styles/product.module.scss";
 
-export default function ProductSecond(props) {
-	// console.log(props, "props");
-	return (
-		<>
-			<div className="container">
-				<div className={cls.product_wrapper}>
-					<div className={cls.product_title}>Лаваш</div>
-					<div className={cls.card_wrapper}>
-						<Card innerData={props} />
-						<Card innerData={props} />
-						<Card innerData={props} />
-						<Card innerData={props} />
-					</div>
-				</div>
-			</div>
-		</>
-	);
+export default function ProductSecond({ somsaData }) {
+  console.log(somsaData, "somsaData");
+  return (
+    <>
+      <div className="container">
+        <div className={cls.product_wrapper}>
+          <div className={cls.product_title}>Сомса</div>
+		  {somsaData?.length &&
+            somsaData.map((item) => (
+				<div className={cls.card_wrapper}>
+				<Card
+				  name={item.attributes.title}
+				  description={item.attributes.description}
+				  price={item.attributes.price}
+				  img={item?.attributes?.somsaImage?.data?.attributes?.url}
+				/>
+			  </div>
+			))}
+         
+        </div>
+      </div>
+    </>
+  );
 }

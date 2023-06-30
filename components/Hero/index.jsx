@@ -191,12 +191,13 @@ const Hero = () => {
 							</li>
 							<li className={cls.menu_item}>
 								<Link className={cls.menu_link} href="#">
-									Американо
+								Ош
 								</Link>
 							</li>
 							<li className={cls.menu_item}>
 								<Link className={cls.menu_link} href="#">
-									Лаваш
+								Сомса
+
 								</Link>
 							</li>
 							<li className={cls.menu_item}>
