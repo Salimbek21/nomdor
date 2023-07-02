@@ -24,11 +24,6 @@ export default function ProductFourth({salatsData}) {
 									img={item?.attributes?.salatImage?.data?.attributes?.url}
 								/>
 							))}
-
-						{/* {!dataProduct &&
-							[...Array(4).keys()].map((i) => {
-								return <CardLoader key={i} />;
-							})} */}
 					</div>
 				</div>
 			</div>

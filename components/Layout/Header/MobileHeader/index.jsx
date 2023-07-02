@@ -55,14 +55,6 @@ const MobileHeader = ({ closeNav }) => {
 					<div onClick={() => closeNav(false)} className={cls.mobile_list}>
 						<Link className={cls.mobile_link} href="#">
 							<div className={cls.mobile_item}>
-								<NewsIcon />
-							</div>
-							<h4 className={cls.nav_title}>Новости</h4>
-						</Link>
-					</div>
-					<div onClick={() => closeNav(false)} className={cls.mobile_list}>
-						<Link className={cls.mobile_link} href="#">
-							<div className={cls.mobile_item}>
 								<AboutIcon />
 							</div>
 							<h4 className={cls.nav_title}>О нас</h4>
@@ -74,30 +66,6 @@ const MobileHeader = ({ closeNav }) => {
 								<ContactIcon />
 							</div>
 							<h4 className={cls.nav_title}>Контакты</h4>
-						</Link>
-					</div>
-					<div onClick={() => closeNav(false)} className={cls.mobile_list}>
-						<Link className={cls.mobile_link} href="#">
-							<div className={cls.mobile_item}>
-								<MyOrdersIcon />
-							</div>
-							<h4 className={cls.nav_title}>Мои заказы</h4>
-						</Link>
-					</div>
-					<div onClick={() => closeNav(false)} className={cls.mobile_list}>
-						<Link className={cls.mobile_link} href="#">
-							<div className={cls.mobile_item}>
-								<LanguageIcon />
-							</div>
-							<h4 className={cls.nav_title}>Выберите язык</h4>
-						</Link>
-					</div>
-					<div onClick={() => closeNav(false)} className={cls.mobile_list}>
-						<Link className={cls.mobile_link} href="#">
-							<div className={cls.mobile_item}>
-								<LogOutIcon />
-							</div>
-							<h4 className={cls.nav_title}>Войти</h4>
 						</Link>
 					</div>
 				</div>

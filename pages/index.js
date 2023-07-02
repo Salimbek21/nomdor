@@ -9,7 +9,6 @@ import ProductFourth from "@/components/ProductFourth";
 
 export default function Home({ data1, data2,data3,data4 }) {
   console.log(data2, "DATA");
-  // const [dataProduct, setDataProduct] = useState(null);
 
   return (
     <>

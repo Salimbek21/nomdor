@@ -16,23 +16,18 @@ export default function Footer() {
 					</div>
 					<ul className={cls.footer_nav}>
 						<li className={cls.footer_item}>
-							<Link className={cls.footer_link} href="#">
+							<Link className={cls.footer_link} href="/">
 								Главная
 							</Link>
 						</li>
 						<li className={cls.footer_item}>
-							<Link className={cls.footer_link} href="#">
+							<Link className={cls.footer_link} href="/branches">
 								Филиалы
 							</Link>
 						</li>
 						<li className={cls.footer_item}>
-							<Link className={cls.footer_link} href="#">
+							<Link className={cls.footer_link} href="/vacancy">
 								Вакансии
-							</Link>
-						</li>
-						<li className={cls.footer_item}>
-							<Link className={cls.footer_link} href="#">
-								Новости
 							</Link>
 						</li>
 						<li className={cls.footer_item}>
@@ -41,25 +36,11 @@ export default function Footer() {
 							</Link>
 						</li>
 						<li className={cls.footer_item}>
-							<Link className={cls.footer_link} href="#">
+							<Link className={cls.footer_link} href="/contacts">
 								Контакты
 							</Link>
 						</li>
 					</ul>
-					{/* <ul className={cls.footer_list}>
-						<div className={cls.list_items}>
-							<li className={cls.list_item}>
-								<Link href="#" target="_blank">
-									<Image src={appstore} alt="app store"/>
-								</Link>
-							</li>
-							<li className={cls.list_item}>
-								<Link href="#" target="_blank">
-									<Image src={googleplay} alt="google play"/>
-								</Link>
-							</li>
-						</div>
-					</ul> */}
 				</div>
 				<div className={cls.footer_socialBox}>
 					<p className={cls.footer_text}>
