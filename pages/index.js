@@ -7,17 +7,88 @@ import Bestsellers from "@/components/Bestsellers";
 import { url } from "@/api";
 import ProductFourth from "@/components/ProductFourth";
 
-export default function Home({ data1, data2,data3,data4 }) {
-  console.log(data2, "DATA");
+export default function Home({ data1, data2, data3, data4, data5 }) {
   // const [dataProduct, setDataProduct] = useState(null);
 
   return (
     <>
-      <Hero />
+      <Head>
+        <title>
+         Nomdor osh markazi | nomdor.uz
+        </title>
+        <meta
+          name="description"
+          content={
+            "Nomdor osh markazi"
+          }
+        />
+        <meta
+          name="keywords"
+          content={
+            "Nomdor osh markazi"
+          }
+        />
+
+        <meta
+          property="og:title"
+          content={
+            "  Nomdor osh markazi | nomdor.uz"
+          }
+        />
+        <meta
+          property="og:description"
+          content={
+            "  Nomdor osh markazi | nomdor.uz"
+          }
+        />
+
+        <meta name="author" content="brandstore" />
+
+        <meta property="og:image" content="/Logo2.png" />
+
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="192x192"
+          href="/Logo2.png"
+
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/Logo2.png"
+
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="96x96"
+          href="/Logo2.png"
+
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/Logo2.png"
+        />
+        <link rel="manifest" href="/Favicon/manifest.json" />
+        <meta property="og:url" content={"https://brandstore.uz"} />
+        <meta property="og:type" content={"website"} />
+        <meta
+          name="google-site-verification"
+          content="-aJCq23fZvSXOYJ8AQUwTmgRFgx-rC97EvtFvSt8j8E"
+        />
+        <meta name="yandex-verification" content="0588fead5dcdbb0e" />
+        <meta property="og:site_name" content="brandstore.uz" />
+        <meta property="og:locale" content={"ru_RU"} />
+      </Head>
+      <Hero heroData={data5.data} />
       <Bestsellers bestData={data2.data} />
       <Product newData={data1.data} />
-      <ProductSecond somsaData={data3.data}/>
-      <ProductFourth salatsData={data4.data}/>
+      <ProductSecond somsaData={data3.data} />
+      <ProductFourth salatsData={data4.data} />
     </>
   );
 }
@@ -27,24 +98,30 @@ export async function getStaticProps() {
   const bestSeller = `${url}/best-sellers?populate=bestSellerImage`;
   const somsaData = `${url}/somsas?populate=somsaImage`;
   const salatData = `${url}/salats?populate=salatImage`;
+  const heroData = `${url}/hero-banners?populate=image`;
 
-  const [plovRes, bestDataRes, somsaRes,salatRes] = await Promise.all([
-    fetch(plov),
-    fetch(bestSeller),
-    fetch(somsaData),
-    fetch(salatData),
-  ]);
+  const [plovRes, bestDataRes, somsaRes, salatRes, heroRes] = await Promise.all(
+    [
+      fetch(plov),
+      fetch(bestSeller),
+      fetch(somsaData),
+      fetch(salatData),
+      fetch(heroData),
+    ]
+  );
   const data1 = await plovRes.json();
   const data2 = await bestDataRes.json();
   const data3 = await somsaRes.json();
   const data4 = await salatRes.json();
+  const data5 = await heroRes.json();
 
   return {
     props: {
       data1,
       data2,
       data3,
-      data4
+      data4,
+      data5,
     },
     revalidate: 60,
   };

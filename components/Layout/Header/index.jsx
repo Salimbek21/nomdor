@@ -28,33 +28,35 @@ const Header = () => {
         <div className={cls.header}>
           <div className={cls.left}>
             <div className={cls.logo}>
-              <Image src={logo} alt="logo" />
+              <Link className={cls.nav_link} href="/">
+                <Image src={logo} alt="logo" />
+              </Link>
             </div>
             <ul className={cls.nav_items}>
               <li className={cls.nav_item}>
                 <Link className={cls.nav_link} href="/">
-                  Главная
+                  Asosiy
                 </Link>
               </li>
               <li className={cls.nav_item}>
                 <Link className={cls.nav_link} href="/branches">
-                  Филиалы
+                  Filiallar
                 </Link>
               </li>
               <li className={cls.nav_item}>
                 <Link className={cls.nav_link} href="/vacancy">
-                  Вакансии
+                  Vakantlar
                 </Link>
               </li>
-            
-              <li className={cls.nav_item}>
+
+              {/* <li className={cls.nav_item}>
                 <Link className={cls.nav_link} href="#">
-                  О нас
+                  Biz haqimizda
                 </Link>
-              </li>
+              </li> */}
               <li className={cls.nav_item}>
                 <Link className={cls.nav_link} href="/contacts">
-                  Контакты
+                  Kontaktlar
                 </Link>
               </li>
             </ul>

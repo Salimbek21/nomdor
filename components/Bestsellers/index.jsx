@@ -14,9 +14,9 @@ import Card from "../Card";
 
 const Bestsellers = ({ bestData }) => {
   return (
-    <div className={cls.bestsellers_wrapper}>
+    <div id="bestSeller" className={cls.bestsellers_wrapper}>
       <div className="container">
-        <h1 className={cls.title}>Хиты продаж</h1>
+        <h1 className={cls.title}>Bestsellerlar</h1>
         <Swiper
           spaceBetween={60}
           loop={true}
@@ -56,8 +56,8 @@ const Bestsellers = ({ bestData }) => {
             slideShadows: true,
           }}
           navigation={{
-            prevEl: `.${cls.prev_btn}`,
-            nextEl: `.${cls.next_btn}`,
+            prevEl: ".prev_button1",
+            nextEl: ".next_button1",
           }}
           modules={[EffectCoverflow, Autoplay, Navigation]}
           className="mySwiper"
@@ -73,11 +73,9 @@ const Bestsellers = ({ bestData }) => {
                 />
               </SwiperSlide>
             ))}
-
-          
         </Swiper>
         <div className={cls.banner_navigation}>
-          <button className={`${cls.btn} ${cls.prev_btn}`}>
+          <button className="prev_button1">
             <svg
               focusable="false"
               aria-hidden="true"
@@ -87,7 +85,7 @@ const Bestsellers = ({ bestData }) => {
               <path d="M11.67 3.87 9.9 2.1 0 12l9.9 9.9 1.77-1.77L3.54 12z"></path>
             </svg>
           </button>
-          <button className={`${cls.btn} ${cls.next_btn}`}>
+          <button className="next_button1">
             <svg
               focusable="false"
               aria-hidden="true"

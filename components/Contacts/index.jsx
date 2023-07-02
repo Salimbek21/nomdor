@@ -10,54 +10,30 @@ const Contacts = () => {
           <div className={cls.left}>
             <div className={cls.info_wrapper}>
               <div className={cls.info}>
-                <h1 className={cls.title}>Контакты</h1>
+                <h1 className={cls.title}>Kontaktlar</h1>
                 <div className={cls.call_center}>
-                  <p className={cls.call_title}>Call-центр</p>
+                  <p className={cls.call_title}>Qo'ng'iroqlar markazi</p>
                   <span className={cls.numbers}>
                     <Link className={cls.phoneNumbers} href="tel:+998712031212">
-                      +998 71-203-12-12
+                      +998 71-207 04-04
                     </Link>
-                    <Link className={cls.phoneNumbers} href="tel:+998712031212">
-                      +998 71-203-12-12
-                    </Link>
+                 
                   </span>
                 </div>
-                <div className={cls.title_info}>
-                  <p className={cls.title}>Телефоны доставки:</p>
-                  <div className={cls.info}>
-                    <div className={cls.info_inner}>
-                      <Link
-                        href="tel:+998712031212"
-                        className={cls.phoneNumbers}
-                      >
-                        +998 71-203-12-12 (единый номер доставки)
-                      </Link>
-                    </div>
-                  </div>
-                </div>
+                
                 <hr className={cls.line} />
+                
                 <div className={cls.title_info}>
-                  <p className={cls.title}>Адрес офиса:</p>
+                  <p className={cls.title}>Ish vaqti:</p>
                   <div className={cls.info}>
                     <div className={cls.info_inner}>
                       <div className={cls.phoneNumbers}>
-                        г. Ташкент, 100066, Чиланзарский р-н., тупик Фурката,
-                        175
+                        24/7
                       </div>
                     </div>
                   </div>
                 </div>
-                <div className={cls.title_info}>
-                  <p className={cls.title}>Часы работы офиса:</p>
-                  <div className={cls.info}>
-                    <div className={cls.info_inner}>
-                      <div className={cls.phoneNumbers}>
-                        9:00 – 18:00 Выходные: суббота, воскресенье
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className={cls.title_info}>
+                {/* <div className={cls.title_info}>
                   <p className={cls.title}>Электронная почта:</p>
                   <div className={cls.info}>
                     <div className={cls.info_inner}>
@@ -66,15 +42,15 @@ const Contacts = () => {
                       </div>
                     </div>
                   </div>
-                </div>
+                </div> */}
                 <span className={cls.delivery_link}>
-                  Вы можете заказать доставку через наш бот:{"  "}
+                Bizning bot orqali yetkazib berishga buyurtma berishingiz mumkin:{"  "}
                   <Link
-                    href="https://t.me/evosdeliverybot"
+                    href="https://t.me/nomdor_somsa_osh_markazi_bot"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    https://t.me/evosdeliverybot
+         https://t.me/nomdor_somsa_osh_markazi_bot
                   </Link>
                   .
                 </span>
@@ -86,7 +62,7 @@ const Contacts = () => {
               <YMaps query={{ lang: "en_RU" }}>
                 <Map
                   width={"100%"}
-                  height={"100%"}
+                  height={"500px"}
                   defaultState={{
                     center: [41.2646, 69.2163],
                     zoom: 9,

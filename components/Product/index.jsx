@@ -6,12 +6,11 @@ import { useEffect, useState } from "react";
 import CardLoader from "../CardLoader";
 
 export default function Product({ newData }) {
-  console.log(newData, "data");
   return (
     <>
-      <div className="container">
+      <div id="plov" className="container">
         <div className={cls.product_wrapper}>
-          <div className={cls.product_title}>	Ош</div>
+          <div className={cls.product_title}>Osh</div>
 
           {/* {props.newData && props.newData.map} */}
           <div className={cls.card_wrapper}>

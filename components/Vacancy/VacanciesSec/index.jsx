@@ -7,18 +7,18 @@ import "swiper/css/navigation";
 import { Autoplay, Navigation } from "swiper";
 
 const VacancySec = ({ data }) => {
-  console.log(data, "data");
+  console.log(data,);
   return (
     <div className={cls.jobs_wrapper}>
       <div className="container">
         <div className={cls.jobs_textItem}>
-          <h1 className={cls.title}>Вакансии</h1>
-          <p className={cls.desc}>
+          <h1 className={cls.title}>Vakantlar</h1>
+          {/* <p className={cls.desc}>
             Мы по праву гордимся, что на сегодняшний день наша компания является
             одним из крупнейших работодателей для студентов и молодежи
             Узбекистана, благодаря тем условиям, которые мы создаем для наших
             сотрудников.
-          </p>
+          </p> */}
         </div>
         <div className={cls.vacancies_wrapper}>
           <Swiper

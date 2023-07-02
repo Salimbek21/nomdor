@@ -10,9 +10,9 @@ export default function ProductFourth({salatsData}) {
 
 	return (
 		<>
-			<div className="container">
+			<div id="salati" className="container">
 				<div className={cls.product_wrapper}>
-					<div className={cls.product_title}>Салаты</div>
+					<div className={cls.product_title}>Salat</div>
 					<div className={cls.card_wrapper}>
 						{salatsData?.length &&
 							salatsData?.map((item) => (

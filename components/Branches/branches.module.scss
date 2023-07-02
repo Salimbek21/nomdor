@@ -82,8 +82,9 @@
       }
 
       .card {
-        display: flex;
-
+        .cardBox{
+          display: flex;
+          align-items: center;
         .card_box {
           display: flex;
           align-items: flex-start;
@@ -153,6 +154,8 @@
               }
             }
           }
+        }
+
         }
 
         .card_workingHours {
