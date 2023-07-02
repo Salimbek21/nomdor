@@ -1,6 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
 import cls from "./bran.module.scss";
-import mapboxgl, { Layer } from "mapbox-gl";
 import { Map, Placemark, YMaps, ZoomControl } from "@pbe/react-yandex-maps";
 
 const InnerBranch = ({ data }) => {
