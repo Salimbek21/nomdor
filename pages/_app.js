@@ -1,5 +1,5 @@
 import Layout from "@/public";
-import "@/styles/globals.css";
+import "@/styles/globals.scss";
 import { useEffect, useState } from "react";
 import DotLoader from "react-spinners/DotLoader";
 
