@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import CardLoader from "../CardLoader";
 
 export default function Product({ newData }) {
+<<<<<<< HEAD
   return (
     <>
       <div id="plov" className="container">
@@ -28,17 +29,27 @@ export default function Product({ newData }) {
       </div>
     </>
   );
+=======
+	console.log(newData, "data");
+	return (
+		<>
+			<div className="container">
+				<div className={cls.product_wrapper}>
+					<div className={cls.product_title}>Ош</div>
+					<div className={cls.card_wrapper}>
+						{newData?.length &&
+							newData.map((item) => (
+								<Card
+									name={item.attributes.title}
+									description={item.attributes.description}
+									price={item.attributes.price}
+									img={item?.attributes?.plovImage?.data?.attributes?.url}
+								/>
+							))}
+					</div>
+				</div>
+			</div>
+		</>
+	);
+>>>>>>> bbd0808938db7529a2b76c3ab28a68fa39ea91e4
 }
-
-// export async function getStaticProps() {
-// 	const res = await fetch(`${url}/plovs?populate=plovImage`);
-// 	const data = await res.json();
-
-// 	return {
-// 		props: {
-// 			data,
-// 		},
-
-// 		revalidate: 1,
-// 	};
-// }

@@ -23,7 +23,7 @@ export const BurgerMenuIcon = () => (
 	>
 		<path
 			d="M3 18H21V16H3V18ZM3 13H21V11H3V13ZM3 6V8H21V6H3Z"
-			fill="#323232"
+			fill="#713d8d"
 		></path>
 	</svg>
 );
@@ -48,7 +48,7 @@ export const InstagramIcon = () => (
 		width="24"
 		height="24"
 		viewBox="0 0 24 24"
-		fill="#309b42"
+		fill="#713D8D"
 		xmlns="http://www.w3.org/2000/svg"
 	>
 		<g clipPath="url(#clip0_528_5853)">
@@ -87,7 +87,7 @@ export const FacebookIcon = () => (
 		width="24"
 		height="24"
 		viewBox="0 0 24 24"
-		fill="#309b42"
+		fill="#713D8D"
 		xmlns="http://www.w3.org/2000/svg"
 	>
 		<g clipPath="url(#clip0_526_3433)">
@@ -118,7 +118,7 @@ export const TelegramIcon = () => (
 		width="24"
 		height="24"
 		viewBox="0 0 24 24"
-		fill="#309b42"
+		fill="#713D8D"
 		xmlns="http://www.w3.org/2000/svg"
 	>
 		<g clipPath="url(#clip0_526_3436)">

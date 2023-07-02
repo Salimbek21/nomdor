@@ -45,15 +45,15 @@ const Header = () => {
               </li>
               <li className={cls.nav_item}>
                 <Link className={cls.nav_link} href="/vacancy">
-                  Vakantlar
+                  Vakansiyalar
                 </Link>
               </li>
 
-              {/* <li className={cls.nav_item}>
+              <li className={cls.nav_item}>
                 <Link className={cls.nav_link} href="#">
                   Biz haqimizda
                 </Link>
-              </li> */}
+              </li>
               <li className={cls.nav_item}>
                 <Link className={cls.nav_link} href="/contacts">
                   Kontaktlar
