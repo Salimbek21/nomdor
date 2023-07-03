@@ -18,7 +18,7 @@ export default function ProductFourth({salatsData}) {
 							salatsData?.map((item) => (
 								<Card
 									key={item.id}
-									name={item.attributes.title}
+									name={item.attributes.salatName}
 									description={item.attributes.description}
 									price={item.attributes.price}
 									img={item?.attributes?.salatImage?.data?.attributes?.url}

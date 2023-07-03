@@ -18,7 +18,7 @@ export default function ProductFourth({shashdata}) {
 							shashdata?.map((item) => (
 								<Card
 									key={item.id}
-									name={item.attributes.title}
+									name={item.attributes.shashlikTitle}
 									description={item.attributes.description}
 									price={item.attributes.price}
 									img={item?.attributes?.shashlikImage?.data?.attributes?.url}
