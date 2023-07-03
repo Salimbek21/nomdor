@@ -9,6 +9,7 @@ import en from "@/public/assets/icon/en.svg";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import MobileHeader from "./MobileHeader";
+
 import {
   ArrowIcon,
   BurgerMenuIcon,
@@ -17,6 +18,7 @@ import {
   UserIcon,
   UzIcon,
 } from "@/components/svg";
+import MobileMenu from "./MobileMenu";
 
 const Header = () => {
   const router = useRouter();
@@ -49,11 +51,11 @@ const Header = () => {
                 </Link>
               </li>
 
-              <li className={cls.nav_item}>
+              {/* <li className={cls.nav_item}>
                 <Link className={cls.nav_link} href="#">
                   Biz haqimizda
                 </Link>
-              </li>
+              </li> */}
               <li className={cls.nav_item}>
                 <Link className={cls.nav_link} href="/contacts">
                   Kontaktlar
@@ -62,20 +64,10 @@ const Header = () => {
             </ul>
           </div>
           <div className={cls.right}>
-            <div className={cls.buttons}>
-              <div className={cls.basket}></div>
-
-              <div
-                onClick={() => {
-                  setIsOpen(true);
-                }}
-                className={cls.burger_menu}
-              >
-                <BurgerMenuIcon />
-              </div>
-              {isOpen && <MobileHeader closeNav={setIsOpen} />}
-            </div>
+          <MobileMenu/>
+          
           </div>
+
         </div>
       </div>
     </div>
