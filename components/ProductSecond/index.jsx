@@ -7,17 +7,18 @@ export default function ProductSecond({ somsaData }) {
       <div id="Сомса" className="container">
         <div className={cls.product_wrapper}>
           <div className={cls.product_title}>Сомса</div>
+          <div className={cls.card_wrapper}>
           {somsaData?.length &&
             somsaData.map((item) => (
-              <div className={cls.card_wrapper}>
+           
                 <Card
                   name={item.attributes.title}
                   description={item.attributes.description}
                   price={item.attributes.price}
                   img={item?.attributes?.somsaImage?.data?.attributes?.url}
                 />
-              </div>
             ))}
+              </div>
         </div>
       </div>
     </>
