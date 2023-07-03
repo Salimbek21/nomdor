@@ -14,10 +14,7 @@ export default function App({ Component, pageProps }) {
 
 	return (
 		<>
-			<Layout>
-				<Component {...pageProps} />
-			</Layout>
-			{/* {loading ? (
+			{loading ? (
 				<>
 					<div className="loader">
 						<DotLoader size={60} color={"#713D8D"} loading={loading} />
@@ -29,7 +26,7 @@ export default function App({ Component, pageProps }) {
 						<Component {...pageProps} />
 					</Layout>
 				</>
-			)} */}
+			)}
 		</>
 	);
 }
