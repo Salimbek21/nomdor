@@ -1,7 +1,7 @@
 .wrapper {
 	position: relative;
 	padding: 103px 0 73px;
-	background: #713D8D;
+	background: #713d8d;
 	overflow: hidden;
 
 	@media (max-width: 576px) {
@@ -269,6 +269,8 @@
 					display: flex;
 					flex-direction: column;
 					row-gap: 12px;
+					max-width: 550px;
+					max-height: 550px;
 
 					@media (max-width: 990px) {
 						max-width: 400px;
