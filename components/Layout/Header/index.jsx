@@ -37,17 +37,17 @@ const Header = () => {
             <ul className={cls.nav_items}>
               <li className={cls.nav_item}>
                 <Link className={cls.nav_link} href="/">
-                  Asosiy
+                  Главная
                 </Link>
               </li>
               <li className={cls.nav_item}>
                 <Link className={cls.nav_link} href="/branches">
-                  Filiallar
+                  Филиалы
                 </Link>
               </li>
               <li className={cls.nav_item}>
                 <Link className={cls.nav_link} href="/vacancy">
-                  Vakansiyalar
+                  Вакансии
                 </Link>
               </li>
 
@@ -58,7 +58,7 @@ const Header = () => {
               </li> */}
               <li className={cls.nav_item}>
                 <Link className={cls.nav_link} href="/contacts">
-                  Kontaktlar
+                  Контакты
                 </Link>
               </li>
             </ul>

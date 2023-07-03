@@ -13,66 +13,24 @@ export default function Home({ data1, data2, data3, data4, data5 }) {
   return (
     <>
       <Head>
-        <title>
-         Nomdor osh markazi | nomdor.uz
-        </title>
-        <meta
-          name="description"
-          content={
-            "Nomdor osh markazi"
-          }
-        />
-        <meta
-          name="keywords"
-          content={
-            "Nomdor osh markazi"
-          }
-        />
+        <title>Nomdor Ош markazi | nomdor.uz</title>
+        <meta name="description" content={"Nomdor Ош markazi"} />
+        <meta name="keywords" content={"Nomdor Ош markazi"} />
 
-        <meta
-          property="og:title"
-          content={
-            "  Nomdor osh markazi | nomdor.uz"
-          }
-        />
+        <meta property="og:title" content={"  Nomdor Ош markazi | nomdor.uz"} />
         <meta
           property="og:description"
-          content={
-            "  Nomdor osh markazi | nomdor.uz"
-          }
+          content={"  Nomdor Ош markazi | nomdor.uz"}
         />
 
         <meta name="author" content="brandstore" />
 
         <meta property="og:image" content="/Logo2.png" />
 
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="192x192"
-          href="/Logo2.png"
-
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="32x32"
-          href="/Logo2.png"
-
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="96x96"
-          href="/Logo2.png"
-
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="16x16"
-          href="/Logo2.png"
-        />
+        <link rel="icon" type="image/png" sizes="192x192" href="/Logo2.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/Logo2.png" />
+        <link rel="icon" type="image/png" sizes="96x96" href="/Logo2.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/Logo2.png" />
         <link rel="manifest" href="/Favicon/manifest.json" />
         <meta property="og:url" content={"https://brandstore.uz"} />
         <meta property="og:type" content={"website"} />

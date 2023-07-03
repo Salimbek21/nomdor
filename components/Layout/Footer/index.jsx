@@ -17,12 +17,12 @@ export default function Footer() {
           <ul className={cls.footer_nav}>
             <li className={cls.footer_item}>
               <Link className={cls.footer_link} href="#">
-                Asosiy
+                Главная
               </Link>
             </li>
             <li className={cls.footer_item}>
               <Link className={cls.footer_link} href="#">
-                Filiallar
+                Филиалы
               </Link>
             </li>
             <li className={cls.footer_item}>
@@ -62,7 +62,7 @@ export default function Footer() {
           <ul className={cls.footer_socials}>
             <li className={cls.social_item}>
               <Link
-                href="https://www.instagram.com/nomdor_somsa_osh_markazi/"
+                href="https://www.instagram.com/nomdor_Сомса_Ош_markazi/"
                 className={cls.social_link}
                 target="_blank"
               >
@@ -81,7 +81,7 @@ export default function Footer() {
             <li className={cls.social_item}>
               <Link
                 className={cls.social_link}
-                href="https://t.me/nomdor_somsa_osh_markazi_bot"
+                href="https://t.me/nomdor_Сомса_Ош_markazi_bot"
                 target="_blank"
               >
                 <TelegramIcon />

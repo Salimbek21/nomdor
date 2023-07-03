@@ -4,9 +4,9 @@ import cls from "../../styles/product.module.scss";
 export default function ProductSecond({ somsaData }) {
   return (
     <>
-      <div id="somsa" className="container">
+      <div id="Сомса" className="container">
         <div className={cls.product_wrapper}>
-          <div className={cls.product_title}>Somsa</div>
+          <div className={cls.product_title}>Сомса</div>
           {somsaData?.length &&
             somsaData.map((item) => (
               <div className={cls.card_wrapper}>

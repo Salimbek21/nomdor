@@ -16,7 +16,7 @@ const Bestsellers = ({ bestData }) => {
   return (
     <div id="bestSeller" className={cls.bestsellers_wrapper}>
       <div className="container">
-        <h1 className={cls.title}>Bestsellerlar</h1>
+        <h1 className={cls.title}>Хиты продаж</h1>
         <Swiper
           spaceBetween={60}
           loop={true}

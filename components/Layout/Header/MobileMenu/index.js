@@ -6,12 +6,12 @@ import Link from "next/link";
 const MOBILE_NAV_ITEMS = [
   {
     id: 0,
-    navTitle: "Asosiy",
+    navTitle: "Главная",
     href: "/",
   },
   {
     id: 1,
-    navTitle: "Filiallar",
+    navTitle: "Филиалы",
     href: "/branches",
   },
   {
@@ -21,7 +21,7 @@ const MOBILE_NAV_ITEMS = [
   },
   {
     id: 3,
-    navTitle: "Kontaktlar",
+    navTitle: "Контакты",
     href: "/contacts",
   },
  

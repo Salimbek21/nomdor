@@ -10,7 +10,7 @@ export default function Product({ newData }) {
     <>
       <div id="plov" className="container">
         <div className={cls.product_wrapper}>
-          <div className={cls.product_title}>Osh</div>
+          <div className={cls.product_title}>Ош</div>
 
           {/* {props.newData && props.newData.map} */}
           <div className={cls.card_wrapper}>

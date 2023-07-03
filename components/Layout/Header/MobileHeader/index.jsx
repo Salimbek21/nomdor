@@ -33,7 +33,7 @@ const MobileHeader = ({ closeNav }) => {
               <div className={cls.mobile_item}>
                 <HomeIcon />
               </div>
-              <h4 className={cls.nav_title}>Asosiy</h4>
+              <h4 className={cls.nav_title}>Главная</h4>
             </Link>
           </div>
           <div onClick={() => closeNav(false)} className={cls.mobile_list}>
@@ -41,7 +41,7 @@ const MobileHeader = ({ closeNav }) => {
               <div className={cls.mobile_item}>
                 <BranchIcon />
               </div>
-              <h4 className={cls.nav_title}>Filiallar</h4>
+              <h4 className={cls.nav_title}>Филиалы</h4>
             </Link>
           </div>
           <div onClick={() => closeNav(false)} className={cls.mobile_list}>
@@ -49,7 +49,7 @@ const MobileHeader = ({ closeNav }) => {
               <div className={cls.mobile_item}>
                 <JobsIcon />
               </div>
-              <h4 className={cls.nav_title}>Vakansiyalar</h4>
+              <h4 className={cls.nav_title}>Вакансии</h4>
             </Link>
           </div>
          

@@ -12,7 +12,7 @@ const Branches = ({ data }) => {
     <div className="container">
       <div className={cls.branches_wrapper}>
         <div className={cls.head}>
-          <h1 className={cls.title}>Filiallar</h1>
+          <h1 className={cls.title}>Филиалы</h1>
           {/* <div className={cls.btn_group}>
             <button className={cls.btn_list}>Список</button>
           </div> */}

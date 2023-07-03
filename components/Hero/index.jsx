@@ -54,14 +54,14 @@ const Hero = ({ heroData }) => {
                         <div className={cls.btn_box}>
                           <Link href="#bestSeller">
                             <button className={cls.btn_head}>
-                              Bizning menyu{" "}
+                              Наше меню{" "}
                             </button>
                           </Link>
-                          <Link href="https://t.me/nomdor_somsa_osh_markazi_bot">
+                          <Link href="https://t.me/nomdor_Сомса_Ош_markazi_bot">
                             <button
                               className={`${cls.btn_head} ${cls.btn_head1}`}
                             >
-                              Bizning bot{" "}
+                              Наш бот{" "}
                               <svg
                                 focusable="false"
                                 aria-hidden="true"
@@ -127,22 +127,22 @@ const Hero = ({ heroData }) => {
             <ul className={cls.menu_list}>
               <li className={cls.menu_item}>
                 <Link className={cls.menu_link} href="#bestSeller">
-                  Bestsellerlar
+                  Хиты продаж
                 </Link>
               </li>
               <li className={cls.menu_item}>
                 <Link className={cls.menu_link} href="#plov">
-                  Osh
+                  Ош
                 </Link>
               </li>
               <li className={cls.menu_item}>
-                <Link className={cls.menu_link} href="#somsa">
-                  Somsa
+                <Link className={cls.menu_link} href="#Сомса">
+                  Сомса
                 </Link>
               </li>
               <li className={cls.menu_item}>
                 <Link className={cls.menu_link} href="#salati">
-                  Salatlar
+                  Салаты
                 </Link>
               </li>
             </ul>

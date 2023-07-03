@@ -10,7 +10,7 @@ const Contacts = () => {
           <div className={cls.left}>
             <div className={cls.info_wrapper}>
               <div className={cls.info}>
-                <h1 className={cls.title}>Kontaktlar</h1>
+                <h1 className={cls.title}>Контакты</h1>
                 <div className={cls.call_center}>
                   <p className={cls.call_title}>Qo'ng'iroqlar markazi</p>
                   <span className={cls.numbers}>
@@ -44,13 +44,13 @@ const Contacts = () => {
                   </div>
                 </div> */}
                 <span className={cls.delivery_link}>
-                Bizning bot orqali yetkazib berishga buyurtma berishingiz mumkin:{"  "}
+                Наш бот orqali yetkazib berishga buyurtma berishingiz mumkin:{"  "}
                   <Link
-                    href="https://t.me/nomdor_somsa_osh_markazi_bot"
+                    href="https://t.me/nomdor_Сомса_Ош_markazi_bot"
                     target="_blank"
                     rel="noreferrer"
                   >
-         https://t.me/nomdor_somsa_osh_markazi_bot
+         https://t.me/nomdor_Сомса_Ош_markazi_bot
                   </Link>
                   .
                 </span>

@@ -17,7 +17,7 @@ export default function Card(props) {
 						<div className={cls.desc}>
 							<p title={props.description}>{props.description}</p>
 						</div>
-						<h2 className={cls.price}>{props.price} so'm</h2>
+						<h2 className={cls.price}>{props.price} сум</h2>
 					</div>
 				</div>
 			</Link>
