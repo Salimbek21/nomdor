@@ -66,7 +66,7 @@ const Bestsellers = ({ bestData }) => {
             bestData.map((item) => (
               <SwiperSlide className={cls.seller_swiper_slide}>
                 <Card
-                  name={item.attributes.title}
+                  name={item.attributes.Title}
                   description={item.attributes.description}
                   price={item.attributes.Price}
                   img={item?.attributes?.bestSellerImage?.data?.attributes?.url}
