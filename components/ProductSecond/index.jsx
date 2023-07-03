@@ -19,6 +19,7 @@ export default function ProductSecond({ somsaData }) {
                 />
             ))}
               </div>
+              
         </div>
       </div>
     </>
