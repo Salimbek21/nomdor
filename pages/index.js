@@ -6,8 +6,9 @@ import Bestsellers from "@/components/Bestsellers";
 
 import { url } from "@/api";
 import ProductFourth from "@/components/ProductFourth";
+import ProductFive from "@/components/ProductFive";
 
-export default function Home({ data1, data2, data3, data4, data5 }) {
+export default function Home({ data1, data2, data3, data4, data5,data6 }) {
   // const [dataProduct, setDataProduct] = useState(null);
 
   return (
@@ -47,6 +48,7 @@ export default function Home({ data1, data2, data3, data4, data5 }) {
       <Product newData={data1.data} />
       <ProductSecond somsaData={data3.data} />
       <ProductFourth salatsData={data4.data} />
+      <ProductFive shashdata={data6.data} />
     </>
   );
 }
@@ -57,14 +59,16 @@ export async function getStaticProps() {
   const somsaData = `${url}/somsas?populate=somsaImage`;
   const salatData = `${url}/salats?populate=salatImage`;
   const heroData = `${url}/hero-banners?populate=image`;
+  const shashlikData = `${url}/shashliks?populate=shashlikImage`;
 
-  const [plovRes, bestDataRes, somsaRes, salatRes, heroRes] = await Promise.all(
+  const [plovRes, bestDataRes, somsaRes, salatRes, heroRes, shashRes] = await Promise.all(
     [
       fetch(plov),
       fetch(bestSeller),
       fetch(somsaData),
       fetch(salatData),
       fetch(heroData),
+      fetch(shashlikData),
     ]
   );
   const data1 = await plovRes.json();
@@ -72,6 +76,7 @@ export async function getStaticProps() {
   const data3 = await somsaRes.json();
   const data4 = await salatRes.json();
   const data5 = await heroRes.json();
+  const data6 = await shashRes.json();
 
   return {
     props: {
@@ -80,6 +85,7 @@ export async function getStaticProps() {
       data3,
       data4,
       data5,
+      data6
     },
     revalidate: 60,
   };
