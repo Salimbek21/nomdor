@@ -50,7 +50,7 @@ const Contacts = () => {
 							<YMaps query={{ lang: "en_RU" }}>
 								<Map
 									width={"100%"}
-									height={"500px"}
+									height={"350px"}
 									defaultState={{
 										center: [41.2646, 69.2163],
 										zoom: 9,

@@ -53,11 +53,12 @@ const Hero = ({ heroData }) => {
                       <div className={cls.btn_review}>
                         <div className={cls.btn_box}>
                           <Link href="#bestSeller">
-                            <button className={cls.btn_head}>
-                              Наше меню{" "}
-                            </button>
+                            <button className={cls.btn_head}>Наше меню </button>
                           </Link>
-                          <Link href="https://t.me/nomdor_Сомса_Ош_markazi_bot">
+                          <Link
+                            href="https://t.me/nomdor_somsa_osh_markazi_bot"
+                            target="_blank"
+                          >
                             <button
                               className={`${cls.btn_head} ${cls.btn_head1}`}
                             >
@@ -113,7 +114,6 @@ const Hero = ({ heroData }) => {
                 viewBox="0 0 24 24"
                 data-testid="ArrowForwardIosIcon"
                 width="20"
-
               >
                 <path d="M6.23 20.23 8 22l10-10L8 2 6.23 3.77 14.46 12z"></path>
               </svg>

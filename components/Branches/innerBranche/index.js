@@ -10,7 +10,7 @@ const InnerBranch = ({ data }) => {
 		<>
 			<div className="container">
 				<div className={cls.wrapAll}>
-					<h3>{data.attributes.Title}</h3>
+					<h3>{data.attributes?.Title}</h3>
 				</div>
 				<div className="rightMap">
 					<div className="mapsRight">

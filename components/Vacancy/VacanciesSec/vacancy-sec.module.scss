@@ -24,8 +24,8 @@
       @media (max-width: 800px) {
         font-size: 30px;
       }
-      
-			@media (max-width: 576px) {
+
+      @media (max-width: 576px) {
         font-size: 26px;
       }
     }
@@ -152,12 +152,12 @@
 
           .btn_primary {
             @extend .btn_outline;
-            background-color: #309b42;
+            background-color: rgb(113, 61, 141);
             color: #ffffff;
             margin-right: 0;
 
             &:hover {
-              background: rgba(48, 155, 66, 0.9);
+              background: rgba(113, 61, 141, 0.9);
             }
           }
         }
