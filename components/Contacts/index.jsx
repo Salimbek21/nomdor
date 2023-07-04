@@ -30,16 +30,6 @@ const Contacts = () => {
 										</div>
 									</div>
 								</div>
-								{/* <div className={cls.title_info}>
-                  <p className={cls.title}>Электронная почта:</p>
-                  <div className={cls.info}>
-                    <div className={cls.info_inner}>
-                      <div className={cls.phoneNumbers}>
-                        HR – rabota@evos.uz Маркетинг – marketing@evos.uz
-                      </div>
-                    </div>
-                  </div>
-                </div> */}
 								<span className={cls.delivery_link}>
 									Bizning bot orqali yetkazib berishga buyurtma berishingiz
 									mumkin:{"  "}

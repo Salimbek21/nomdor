@@ -29,7 +29,7 @@ const Hero = ({ heroData }) => {
             loop={true}
             centeredSlides={true}
             autoplay={{
-              delay: 2500,
+              delay: 2500000,
               disableOnInteraction: false,
             }}
             navigation={{

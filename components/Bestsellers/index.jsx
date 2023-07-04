@@ -26,6 +26,10 @@ const Bestsellers = ({ bestData }) => {
             disableOnInteraction: false,
           }}
           breakpoints={{
+            0: {
+              slidesPerView: "auto",
+              spaceBetween: 20,
+            },
             320: {
               slidesPerView: "auto",
               spaceBetween: 20,
