@@ -1,4 +1,3 @@
-import Link from "next/link";
 import cls from "./card.module.scss";
 import Image from "next/image";
 
@@ -11,7 +10,7 @@ export default function Card(props) {
           width={200}
           height={200}
           src={props.img}
-          alt="Card img"
+          alt={`${props?.name || "Img"}`}
         />
         <div className={cls.product_body}>
           <div className={cls.product_texts}>

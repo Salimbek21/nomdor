@@ -7,7 +7,6 @@ import "swiper/css/navigation";
 import { Autoplay, Navigation } from "swiper";
 
 const VacancySec = ({ data }) => {
-  console.log(data,);
   return (
     <div className={cls.jobs_wrapper}>
       <div className="container">

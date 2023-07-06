@@ -1,14 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import cls from "./hero.module.scss";
-import bannerIcon1 from "@/public/assets/icon/bannerIcon1.svg";
-import bannerIcon2 from "@/public/assets/icon/bannerIcon2.svg";
-import bannerIcon3 from "@/public/assets/icon/bannerIcon3.svg";
-import bannerIcon4 from "@/public/assets/icon/bannerIcon4.svg";
-import bannerIcon5 from "@/public/assets/icon/bannerIcon5.svg";
-import user1 from "@/public/assets/icon/user1.svg";
-import user2 from "@/public/assets/icon/user2.svg";
-import user3 from "@/public/assets/icon/user3.svg";
-import morojenoe from "@/public/assets/images/morojenoe.jpg";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -18,8 +9,6 @@ import Image from "next/image";
 import Link from "next/link";
 
 const Hero = ({ heroData }) => {
-  console.log(heroData, "data");
-
   return (
     <>
       <div className={cls.wrapper}>
@@ -87,7 +76,7 @@ const Hero = ({ heroData }) => {
                           width={633}
                           height={633}
                           src={item.attributes?.image?.data?.attributes?.url}
-                          alt="morojenoe"
+                          alt="Hero img"
                         />
                       </div>
                     </div>

@@ -1,9 +1,5 @@
 import Card from "../Card";
 import cls from "../../styles/product.module.scss";
-import { url } from "@/api";
-import axios from "axios";
-import { useEffect, useState } from "react";
-import CardLoader from "../CardLoader";
 
 export default function ProductFourth({salatsData}) {
 	

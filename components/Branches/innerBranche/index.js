@@ -5,7 +5,6 @@ import { Map, Placemark, YMaps, ZoomControl } from "@pbe/react-yandex-maps";
 const InnerBranch = ({ data }) => {
 	const [lang, setLang] = useState(+data?.attributes?.Longitude);
 	const [lat, setLat] = useState(+data?.attributes?.Latitude);
-	console.log(data);
 	return (
 		<>
 			<div className="container">

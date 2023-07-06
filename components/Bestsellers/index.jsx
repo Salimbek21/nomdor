@@ -3,7 +3,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import cls from "./bestsellers.module.scss";
 import { url } from "@/api";
 import CardLoader from "../CardLoader";
-import axios from "axios";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -68,7 +67,7 @@ const Bestsellers = ({ bestData }) => {
         >
           {bestData?.length &&
             bestData.map((item) => (
-              <SwiperSlide className={cls.seller_swiper_slide}>
+              <SwiperSlide key={item?.id} className={cls.seller_swiper_slide}>
                 <Card
                   name={item.attributes.Title}
                   description={item.attributes.description}
