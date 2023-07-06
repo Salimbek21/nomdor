@@ -22,12 +22,12 @@ export default function Footer() {
             </li>
             <li className={cls.footer_item}>
               <Link className={cls.footer_link} href="#">
-                Филиалы
+              Филиалы
               </Link>
             </li>
             <li className={cls.footer_item}>
               <Link className={cls.footer_link} href="#">
-                Vakantlar
+              Вакансии
               </Link>
             </li>
 
@@ -38,7 +38,7 @@ export default function Footer() {
 						</li> */}
             <li className={cls.footer_item}>
               <Link className={cls.footer_link} href="#">
-                Kontakt
+              Контакты
               </Link>
             </li>
           </ul>

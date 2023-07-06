@@ -12,7 +12,7 @@ const VacancySec = ({ data }) => {
     <div className={cls.jobs_wrapper}>
       <div className="container">
         <div className={cls.jobs_textItem}>
-          <h1 className={cls.title}>Vakantlar</h1>
+          <h1 className={cls.title}>Вакансии</h1>
           {/* <p className={cls.desc}>
             Мы по праву гордимся, что на сегодняшний день наша компания является
             одним из крупнейших работодателей для студентов и молодежи
