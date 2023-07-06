@@ -16,7 +16,7 @@ const MOBILE_NAV_ITEMS = [
   },
   {
     id: 2,
-    navTitle: "Vakantlar",
+    navTitle: "Вакансии",
     href: "/vacancy",
   },
   {
