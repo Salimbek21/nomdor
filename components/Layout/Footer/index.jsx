@@ -62,7 +62,7 @@ export default function Footer() {
           <ul className={cls.footer_socials}>
             <li className={cls.social_item}>
               <Link
-                href="https://www.instagram.com/nomdor_Сомса_Ош_markazi/"
+                href="https://www.instagram.com/nomdor_somsa_osh_markazi/"
                 className={cls.social_link}
                 target="_blank"
               >
