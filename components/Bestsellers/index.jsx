@@ -11,7 +11,45 @@ import "swiper/css/effect-coverflow";
 import { Autoplay, Navigation, EffectCoverflow } from "swiper";
 import Card from "../Card";
 
-const Bestsellers = ({ bestData }) => {
+const Bestsellers = () => {
+  const bestData = [
+    {
+      name: "Гушт сомса",
+      title: "Говядина",
+      price: "8 000",
+      img: "/xitimg/scnd.png",
+    },
+    {
+      name: "Жаз 100 гр (Кусковой)",
+      title: "",
+      price: "17 000",
+      img: "/xitimg/third.png",
+    },
+    {
+      name: "Сабзавот ва гуштли сомса",
+      title: "Oвощной сомса",
+      price: "9 000",
+      img: "/xitimg/first.png",
+    },
+    {
+      name: "Туй оши + фольга",
+      title: "",
+      price: "33 000",
+      img: "/xitimg/plov.png",
+    },
+    {
+      name: "Чойхона палов 0.8",
+      title: "",
+      price: "31 000",
+      img: "/xitimg/plovSecnds.png",
+    },
+    {
+      name: "Кузикорин ва пишлокли сомса",
+      title: "Грибы",
+      price: "6 000",
+      img: "/xitimg/qoziqornSoms.png",
+    },
+  ];
   return (
     <div id="bestSeller" className={cls.bestsellers_wrapper}>
       <div className="container">
@@ -69,10 +107,10 @@ const Bestsellers = ({ bestData }) => {
             bestData.map((item) => (
               <SwiperSlide key={item?.id} className={cls.seller_swiper_slide}>
                 <Card
-                  name={item.attributes.Title}
-                  description={item.attributes.description}
-                  price={item.attributes.Price}
-                  img={item?.attributes?.bestSellerImage?.data?.attributes?.url}
+                  name={item.name}
+                  description={item?.title}
+                  price={item.price}
+                  img={item?.img}
                 />
               </SwiperSlide>
             ))}

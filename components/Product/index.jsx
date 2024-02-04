@@ -4,7 +4,7 @@ import { useState } from "react";
 import CardLoader from "../CardLoader";
 import ProductModal from "../ProductModal";
 
-export default function Product({ newData }) {
+export default function Product() {
   const [rs, setRs] = useState({
     id: "",
     description: "",
@@ -12,14 +12,29 @@ export default function Product({ newData }) {
     plovImage: "",
   });
 
-  const showDetail = (id) => {
-    fetch(
-      `https://nomdor-dashboard.onrender.com/api/plovs?populate=plovImage/${id}`
-    )
-      .then((resposne) => resposne.json())
-      .then((res) => setRs(res));
-  };
-
+  const newData = [
+    {
+      name: "Чойхона палов 0.8",
+      description: "",
+      price: "31 000",
+      img: "/xitimg/plovSecnds.png",
+      title: "",
+    },
+    {
+      name: "Туй оши + фольга 0.8",
+      description: "",
+      price: "31 000",
+      img: "/xitimg/plov.png",
+      title: "",
+    },
+    {
+      name: "Туй оши + фольга",
+      description: "",
+      price: "33 000",
+      img: "/xitimg/plovSecnds.png",
+      title: "",
+    },
+  ];
   return (
     <>
       <div id="plov" className="container">
@@ -31,11 +46,10 @@ export default function Product({ newData }) {
               newData.map((item) => (
                 <Card
                   key={item?.id}
-                  onClick={(e) => showDetail(item?.id)}
-                  name={item.attributes.title}
-                  description={item.attributes.description}
-                  price={item.attributes.price}
-                  img={item?.attributes?.plovImage?.data?.attributes?.url}
+                  name={item.title}
+                  description={item.description}
+                  price={item.price}
+                  img={item?.img}
                 />
               ))}
           </div>

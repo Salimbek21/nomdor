@@ -1,7 +1,51 @@
 import Card from "../Card";
 import cls from "../../styles/product.module.scss";
 
-export default function ProductSecond({ somsaData }) {
+export default function ProductSecond() {
+  const somsaData = [
+    {
+      name: "Гушт сомса",
+      description: "Говядина",
+      price: "8 000",
+      img: "/xitimg/scnd.png",
+    },
+    {
+      name: "Кузикорин ва пишлокли сомса",
+      description: "Грибы",
+      price: "6 000",
+      img: "/xitimg/qoziqornSoms.png",
+    },
+    {
+      name: "Картошка сомса",
+      description: "",
+      price: "4 000",
+      img: "/xitimg/somsaa.webp",
+    },
+    {
+      name: "Сабзавот ва гуштли сомса",
+      description: "Oвощной сомса",
+      price: "9 000",
+      img: "/xitimg/first.png",
+    },
+    {
+      name: "Ковок сомса",
+      description: "",
+      price: "4 000",
+      img: "/xitimg/somsauch.webp",
+    },
+    {
+      name: "Товук ва пишлокли сомса",
+      description: "Курица с сыром",
+      price: "6 000",
+      img: "/xitimg/tovuqsomsa.webp",
+    },
+    {
+      name: "Кук сомса",
+      description: "Курица с сыром",
+      price: "6 000",
+      img: "/xitimg/tovuqsomsa.webp",
+    },
+  ];
   return (
     <>
       <div id="Сомса" className="container">
@@ -12,10 +56,10 @@ export default function ProductSecond({ somsaData }) {
               somsaData.map((item) => (
                 <Card
                   key={item?.id}
-                  name={item.attributes.title}
-                  description={item.attributes.description}
-                  price={item.attributes.price}
-                  img={item?.attributes?.somsaImage?.data?.attributes?.url}
+                  name={item.name}
+                  description={item.description}
+                  price={item.price}
+                  img={item?.img}
                 />
               ))}
           </div>

@@ -8,7 +8,24 @@ import { Autoplay, Navigation } from "swiper";
 import Image from "next/image";
 import Link from "next/link";
 
-const Hero = ({ heroData }) => {
+const Hero = () => {
+  const data = [
+    {
+      name: "Ochiq ish o'rini",
+      title: "Kuryerlikga ishga taklif etamiz",
+      img: "/hero.png",
+    },
+    {
+      name: "Nomdordan mahsus so'msalar",
+      title: "Tovuqli va Sirli",
+      img: "/scndHerp.webp",
+    },
+    {
+      name: "Nomdordan shashlik",
+      title: "Jaz shashligimizni ta'tib ko'rganmisiz?v",
+      img: "/heroThrd.webp",
+    },
+  ];
   return (
     <>
       <div className={cls.wrapper}>
@@ -28,61 +45,58 @@ const Hero = ({ heroData }) => {
             modules={[Autoplay, Navigation]}
             className="mySwiper"
           >
-            {heroData.length &&
-              heroData.map((item, i) => (
-                <SwiperSlide key={i} className={cls.swiper_item}>
-                  <div className={cls.left}>
-                    <div className={cls.box}>
-                      <div className={cls.info}>
-                        <h2 className={cls.title}>{item.attributes.Title}</h2>
-                        <div className={cls.desc}>
-                          {item.attributes.description}
-                        </div>
-                      </div>
-                      <div className={cls.btn_review}>
-                        <div className={cls.btn_box}>
-                          <Link href="#bestSeller">
-                            <button className={cls.btn_head}>Наше меню </button>
-                          </Link>
-                          <Link
-                            href="https://t.me/nomdor_somsa_osh_markazi_bot"
-                            target="_blank"
+            {data.map((item) => (
+              <SwiperSlide className={cls.swiper_item}>
+                <div className={cls.left}>
+                  <div className={cls.box}>
+                    <div className={cls.info}>
+                      <h2 className={cls.title}>{item.name}</h2>
+                      <div className={cls.desc}>{item.title}</div>
+                    </div>
+                    <div className={cls.btn_review}>
+                      <div className={cls.btn_box}>
+                        <Link href="#bestSeller">
+                          <button className={cls.btn_head}>Наше меню </button>
+                        </Link>
+                        <Link
+                          href="https://t.me/nomdor_somsa_osh_markazi_bot"
+                          target="_blank"
+                        >
+                          <button
+                            className={`${cls.btn_head} ${cls.btn_head1}`}
                           >
-                            <button
-                              className={`${cls.btn_head} ${cls.btn_head1}`}
+                            Наш бот{" "}
+                            <svg
+                              focusable="false"
+                              aria-hidden="true"
+                              viewBox="0 0 24 24"
+                              data-testid="ArrowForwardIcon"
                             >
-                              Наш бот{" "}
-                              <svg
-                                focusable="false"
-                                aria-hidden="true"
-                                viewBox="0 0 24 24"
-                                data-testid="ArrowForwardIcon"
-                              >
-                                <path
-                                  fill="#ffffff"
-                                  d="m12 4-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
-                                ></path>
-                              </svg>
-                            </button>
-                          </Link>
-                        </div>
+                              <path
+                                fill="#ffffff"
+                                d="m12 4-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"
+                              ></path>
+                            </svg>
+                          </button>
+                        </Link>
                       </div>
                     </div>
                   </div>
-                  <div className={cls.right}>
-                    <div className={cls.img_wrapper}>
-                      <div className={cls.img_box}>
-                        <Image
-                          width={633}
-                          height={633}
-                          src={item.attributes?.image?.data?.attributes?.url}
-                          alt="Hero img"
-                        />
-                      </div>
+                </div>
+                <div className={cls.right}>
+                  <div className={cls.img_wrapper}>
+                    <div className={cls.img_box}>
+                      <Image
+                        width={633}
+                        height={633}
+                        src={item.img}
+                        alt="Hero img"
+                      />
                     </div>
                   </div>
-                </SwiperSlide>
-              ))}
+                </div>
+              </SwiperSlide>
+            ))}
           </Swiper>
           <div className={cls.banner_navigation}>
             <button className="prev_button">

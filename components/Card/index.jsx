@@ -9,7 +9,7 @@ export default function Card(props) {
           className={cls.card_img}
           width={200}
           height={200}
-          src={props.img}
+          src={props?.img}
           alt={`${props?.name || "Img"}`}
         />
         <div className={cls.product_body}>

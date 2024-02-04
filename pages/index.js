@@ -43,50 +43,50 @@ export default function Home({ data1, data2, data3, data4, data5,data6 }) {
         <meta property="og:site_name" content="brandstore.uz" />
         <meta property="og:locale" content={"ru_RU"} />
       </Head>
-      <Hero heroData={data5.data} />
-      <Bestsellers bestData={data2.data} />
-      <Product newData={data1.data} />
-      <ProductSecond somsaData={data3.data} />
-      <ProductFourth salatsData={data4.data} />
-      <ProductFive shashdata={data6.data} />
+      <Hero />
+      <Bestsellers />
+      <Product />
+      <ProductSecond  />
+      <ProductFourth  />
+      <ProductFive />
     </>
   );
 }
 
-export async function getStaticProps() {
-  const plov = `${url}/plovs?populate=plovImage`;
-  const bestSeller = `${url}/best-sellers?populate=bestSellerImage`;
-  const somsaData = `${url}/somsas?populate=somsaImage`;
-  const salatData = `${url}/salats?populate=salatImage`;
-  const heroData = `${url}/hero-banners?populate=image`;
-  const shashlikData = `${url}/shashliks?populate=shashlikImage`;
+// export async function getStaticProps() {
+//   const plov = `${url}/plovs?populate=plovImage`;
+//   const bestSeller = `${url}/best-sellers?populate=bestSellerImage`;
+//   const somsaData = `${url}/somsas?populate=somsaImage`;
+//   const salatData = `${url}/salats?populate=salatImage`;
+//   const heroData = `${url}/hero-banners?populate=image`;
+//   const shashlikData = `${url}/shashliks?populate=shashlikImage`;
 
-  const [plovRes, bestDataRes, somsaRes, salatRes, heroRes, shashRes] = await Promise.all(
-    [
-      fetch(plov),
-      fetch(bestSeller),
-      fetch(somsaData),
-      fetch(salatData),
-      fetch(heroData),
-      fetch(shashlikData),
-    ]
-  );
-  const data1 = await plovRes.json();
-  const data2 = await bestDataRes.json();
-  const data3 = await somsaRes.json();
-  const data4 = await salatRes.json();
-  const data5 = await heroRes.json();
-  const data6 = await shashRes.json();
+//   const [plovRes, bestDataRes, somsaRes, salatRes, heroRes, shashRes] = await Promise.all(
+//     [
+//       fetch(plov),
+//       fetch(bestSeller),
+//       fetch(somsaData),
+//       fetch(salatData),
+//       fetch(heroData),
+//       fetch(shashlikData),
+//     ]
+//   );
+//   const data1 = await plovRes.json();
+//   const data2 = await bestDataRes.json();
+//   const data3 = await somsaRes.json();
+//   const data4 = await salatRes.json();
+//   const data5 = await heroRes.json();
+//   const data6 = await shashRes.json();
 
-  return {
-    props: {
-      data1,
-      data2,
-      data3,
-      data4,
-      data5,
-      data6
-    },
-    revalidate: 60,
-  };
-}
+//   return {
+//     props: {
+//       data1,
+//       data2,
+//       data3,
+//       data4,
+//       data5,
+//       data6
+//     },
+//     revalidate: 60,
+//   };
+// }
