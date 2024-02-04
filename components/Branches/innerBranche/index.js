@@ -25,7 +25,7 @@ const InnerBranch = () => {
 							</div>
 						</div>
 						<YMaps query={{ lang: "en_RU" }}>
-							<Map
+							{/* <Map
 								width={"100%"}
 								height={"300px"}
 								defaultState={{
@@ -35,8 +35,8 @@ const InnerBranch = () => {
 								}}
 							>
 								<ZoomControl options={{ float: "right" }} />
-								{/* <Placemark geometry={[lat, lang]} /> */}
-							</Map>
+								<Placemark geometry={[lat, lang]} />
+							</Map> */}
 						</YMaps>
 					</div>
 				</div>{" "}
