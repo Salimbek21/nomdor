@@ -3,7 +3,24 @@ import cls from "./branches.module.scss";
 import { ArrowRightIcon } from "../svg";
 import Link from "next/link";
 
-const Branches = ({ data }) => {
+const Branches = () => {
+  const data = [
+    {
+      description: "Toshkent shahar, Chilonzor tumani, 10 kvartal, 15-uy.",
+      title: "",
+      workTime: "24/7",
+    },
+    {
+      description: "Toshkent shahar, Yunusobod tumani, Kichik xalqa yo’li 42.",
+      title: "",
+      workTime: "24/7",
+    },
+    {
+      description: "Toshkent shahar, Mirobod tumani, Shahrisabz 21A.",
+      title: "",
+      workTime: "24/7",
+    },
+  ];
   return (
     <div className="container">
       <div className={cls.branches_wrapper}>
@@ -24,25 +41,16 @@ const Branches = ({ data }) => {
                   >
                     <div className={cls.cardBox}>
                       <div className={cls.card_box}>
-                        <div className={cls.imageBox}>
-                          {/* <Image src="" alt="Branch" /> */}
-                        </div>
+                        <div className={cls.imageBox}></div>
                         <div className={cls.branch_address}>
-                          <div className={cls.title}>
-                            {" "}
-                            {item?.attributes?.title}
-                          </div>
-                          <span className={cls.desc}>
-                            {item?.attributes?.description}
-                          </span>
+                          <div className={cls.title}> {item?.title}</div>
+                          <span className={cls.desc}>{item?.description}</span>
                         </div>
                       </div>
                       <div className={cls.card_workingHours}>
                         <div className={cls.workingBox}>
                           <span className={cls.hour}>Ish vaqti</span>
-                          <p className={cls.time}>
-                            {item?.attributes?.workTime}
-                          </p>
+                          <p className={cls.time}>{item?.workTime}</p>
                         </div>
                       </div>
                       <div className={cls.card_icon}>

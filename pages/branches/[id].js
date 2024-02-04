@@ -8,7 +8,7 @@ const BranchesById = ({ data }) => {
   return (
     <>
       <div>
-        <InnerBranch data={data}/>
+        <InnerBranch/>
       </div>
     </>
   );
@@ -16,18 +16,18 @@ const BranchesById = ({ data }) => {
 
 export default BranchesById;
 
-export const getServerSideProps = async (context) => {
-  let data = {};
-  await axios
-    .get(`https://nomdor-dashboard.onrender.com/api/branches/${context.query.id}`, {})
-    .then((res) => (data = res.data.data))
-    .catch((e) => {
-      return { props: {} };
-    });
+// export const getServerSideProps = async (context) => {
+//   let data = {};
+//   await axios
+//     .get(`https://nomdor-dashboard.onrender.com/api/branches/${context.query.id}`, {})
+//     .then((res) => (data = res.data.data))
+//     .catch((e) => {
+//       return { props: {} };
+//     });
 
-  return {
-    props: {
-      data: data,
-    },
-  };
-};
+//   return {
+//     props: {
+//       data: data,
+//     },
+//   };
+// };

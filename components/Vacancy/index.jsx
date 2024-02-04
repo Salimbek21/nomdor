@@ -3,10 +3,10 @@ import MainProfiles from "./MainProfiles";
 import PhoneNumber from "./PhoneNumber";
 import VacancySec from "./VacanciesSec";
 
-const Vacancy = ({data}) => {
+const Vacancy = () => {
 	return (
 		<>
-			<VacancySec data={data}/>
+			<VacancySec />
 
 			{/* <MainProfiles />
 			<CareerStories />

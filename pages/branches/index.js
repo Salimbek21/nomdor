@@ -1,22 +1,22 @@
 import { url } from "@/api";
 import Branches from "@/components/Branches";
 
-const BranchesPage = ({ data1 }) => {
-  return <Branches data={data1.data} />;
+const BranchesPage = () => {
+  return <Branches />;
 };
 
 export default BranchesPage;
 
-export async function getStaticProps() {
-  const branchData = `${url}/branches?populate=image`;
+// export async function getStaticProps() {
+//   const branchData = `${url}/branches?populate=image`;
 
-  const [branchRes] = await Promise.all([fetch(branchData)]);
-  const data1 = await branchRes.json();
+//   const [branchRes] = await Promise.all([fetch(branchData)]);
+//   const data1 = await branchRes.json();
 
-  return {
-    props: {
-      data1,
-    },
-    revalidate: 60,
-  };
-}
+//   return {
+//     props: {
+//       data1,
+//     },
+//     revalidate: 60,
+//   };
+// }

@@ -6,7 +6,11 @@ import "swiper/css/navigation";
 
 import { Autoplay, Navigation } from "swiper";
 
-const VacancySec = ({ data }) => {
+const VacancySec = () => {
+  const data =[{
+    Title:'Yetkazib beruvchi',
+    descr: "- Piyoda, velosipedda / avtotransportda, mashinada - Toshkent shahrini yaxshi bilish - Android smartfoniga ega bo'lish - Aniqlik va mas'uliyat # - Buyurtmani o'z vaqtida yetkazib berish"
+  }]
   return (
     <div className={cls.jobs_wrapper}>
       <div className="container">
@@ -53,16 +57,10 @@ const VacancySec = ({ data }) => {
                 <SwiperSlide className={cls.vacancy_card}>
                   <div className={cls.card}>
                     <div>
-                      <div className={cls.title}>{item.attributes?.Title}</div>
+                      <div className={cls.title}>{item?.Title}</div>
                     </div>
                     <div className={cls.vacancy_items}>
-                      <ul>
-                        <div
-                          dangerouslySetInnerHTML={{
-                            __html: item.attributes.descriptionJob,
-                          }}
-                        />
-                      </ul>
+                      {item.descr}
                     </div>
                     <div className={cls.vacancy_btns}>
                       <button className={cls.btn_outline}>Подробнее</button>
