@@ -35,7 +35,7 @@ const InnerBranch = () => {
 								}}
 							>
 								<ZoomControl options={{ float: "right" }} />
-								<Placemark geometry={[lat, lang]} />
+								{/* <Placemark geometry={[lat, lang]} /> */}
 							</Map>
 						</YMaps>
 					</div>
