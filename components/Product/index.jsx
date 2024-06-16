@@ -16,21 +16,28 @@ export default function Product() {
     {
       name: "Чойхона палов 0.8",
       description: "",
-      price: "31 000",
+      price: "34 000",
+      img: "/xitimg/plovSecnds.png",
+      title: "",
+    },
+    {
+      name: "Чойхона палов",
+      description: "",
+      price: "36 000",
       img: "/xitimg/plovSecnds.png",
       title: "",
     },
     {
       name: "Туй оши + фольга 0.8",
       description: "",
-      price: "31 000",
+      price: "32 000",
       img: "/xitimg/plov.png",
       title: "",
     },
     {
       name: "Туй оши + фольга",
       description: "",
-      price: "33 000",
+      price: "34 000",
       img: "/xitimg/plovSecnds.png",
       title: "",
     },
@@ -46,7 +53,7 @@ export default function Product() {
               newData.map((item) => (
                 <Card
                   key={item?.id}
-                  name={item.title}
+                  name={item.name}
                   description={item.description}
                   price={item.price}
                   img={item?.img}

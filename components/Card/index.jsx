@@ -2,6 +2,7 @@ import cls from "./card.module.scss";
 import Image from "next/image";
 
 export default function Card(props) {
+  console.log(props.name,"props")
   return (
     <div className={cls.card_wrapper}>
       <div className={cls.card}>

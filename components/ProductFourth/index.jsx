@@ -3,42 +3,42 @@ import cls from "../../styles/product.module.scss";
 
 export default function ProductFourth() {
   const salatsData = [
-    {
-      name: "Тузлама ассорти",
-      description: "",
-      price: "7 000",
-      img: "/salats/achiq.webp",
-    },
+    // {
+    //   name: "Тузлама ассорти",
+    //   description: "",
+    //   price: "7 000",
+    //   img: "/salats/achiq.webp",
+    // },
     {
       name: "Бахор салати",
       description: "Bесенний",
-      price: "6 000",
+      price: "7  000",
       img: "/salats/bahor.webp",
     },
     {
       name: "Сузма",
       description: "",
-      price: "6 000",
+      price: "7 000",
       img: "/salats/suzma.webp",
     },
     {
       name: "Ачучук",
       description: "",
-      price: "9 000",
+      price: "10 000",
       img: "/salats/achiqchuk.webp",
     },
     {
       name: "Свежие ассорти",
       description: "",
-      price: "15 000",
+      price: "17 000",
       img: "/salats/svejiy.webp",
     },
-    {
-      name: "Маринованные ассорти",
-      description: "",
-      price: "7 000",
-      img: "/salats/marinovaniy.webp",
-    },
+    // {
+    //   name: "Маринованные ассорти",
+    //   description: "",
+    //   price: "7 000",
+    //   img: "/salats/marinovaniy.webp",
+    // },
     {
       name: "Томатный сок",
       description: "",
