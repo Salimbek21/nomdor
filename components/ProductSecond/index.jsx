@@ -7,25 +7,25 @@ export default function ProductSecond() {
       name: "Гушт сомса",
       description: "Говядина",
       price: "9w` 000",
-      img: "/xitimg/scnd.png",
+      img: "/xitimg/goshtsomsa.webp",
     },
     {
       name: "Кузикорин ва пишлокли сомса",
       description: "Грибы",
       price: "7 000",
-      img: "/xitimg/qoziqornSoms.png",
+      img: "/xitimg/qoziqornsomsa.webp",
     },
     {
       name: "Картошка сомса",
       description: "",
       price: "5 000",
-      img: "/xitimg/somsaa.webp",
+      img: "/xitimg/kartoshkasomsa.webp",
     },
     {
       name: "Сабзавот ва гуштли сомса",
       description: "Oвощной сомса",
       price: "10 000",
-      img: "/xitimg/first.png",
+      img: "/xitimg/sabzovotsomsa.webp",
     },
     {
       name: "Ковок сомса",
@@ -39,12 +39,12 @@ export default function ProductSecond() {
       price: "7 000",
       img: "/xitimg/tovuqsomsa.webp",
     },
-    {
-      name: "Кук сомса",
-      description: "Курица с сыром",
-      price: "5 000",
-      img: "/xitimg/tovuqsomsa.webp",
-    },
+    // {
+    //   name: "Кук сомса",
+    //   description: "Курица с сыром",
+    //   price: "5 000",
+    //   img: "/xitimg/tovuqsomsa.webp",
+    // },
   ];
   return (
     <>
