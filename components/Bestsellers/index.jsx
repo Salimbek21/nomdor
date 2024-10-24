@@ -17,37 +17,37 @@ const Bestsellers = () => {
       name: "Гушт сомса",
       title: "Говядина",
       price: "9 000",
-      img: "/xitimg/scnd.png",
+      img: "/xitimg/goshtsomsa.webp",
     },
     {
       name: "Жаз 100 гр (Кусковой)",
       title: "",
       price: "18 000",
-      img: "/xitimg/third.png",
+      img: "/shashlik/jaz.webp",
     },
     {
       name: "Сабзавот ва гуштли сомса",
       title: "Oвощной сомса",
       price: "9 000",
-      img: "/xitimg/first.png",
+      img: "/xitimg/sabzovotsomsa.webp",
     },
     {
       name: "Туй оши + фольга",
       title: "",
       price: "34 000",
-      img: "/xitimg/plov.png",
+      img: "/xitimg/toyosh.webp",
     },
     {
       name: "Чойхона палов 0.8",
       title: "",
       price: "34 000",
-      img: "/xitimg/plovSecnds.png",
+      img: "/xitimg/choyxonaosh.webp",
     },
     {
       name: "Кузикорин ва пишлокли сомса",
       title: "Грибы",
       price: "7 000",
-      img: "/xitimg/qoziqornSoms.png",
+      img: "/xitimg/qoziqornsomsa.webp",
     },
   ];
   return (
