@@ -6,7 +6,7 @@ export default function ProductSecond() {
     {
       name: "Гушт сомса",
       description: "Говядина",
-      price: "9w` 000",
+      price: "10 000",
       img: "/xitimg/goshtsomsa.webp",
     },
     {
@@ -24,13 +24,13 @@ export default function ProductSecond() {
     {
       name: "Сабзавот ва гуштли сомса",
       description: "Oвощной сомса",
-      price: "10 000",
+      price: "11 000",
       img: "/xitimg/sabzovotsomsa.webp",
     },
     {
       name: "Ковок сомса",
       description: "",
-      price: "4 000",
+      price: "5 000",
       img: "/xitimg/somsauch.webp",
     },
     {
