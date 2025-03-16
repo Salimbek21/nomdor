@@ -7,8 +7,9 @@ import Bestsellers from "@/components/Bestsellers";
 import { url } from "@/api";
 import ProductFourth from "@/components/ProductFourth";
 import ProductFive from "@/components/ProductFive";
+import ProductShorva from "@/components/Shorva";
 
-export default function Home({ data1, data2, data3, data4, data5,data6 }) {
+export default function Home({ data1, data2, data3, data4, data5, data6 }) {
   // const [dataProduct, setDataProduct] = useState(null);
 
   return (
@@ -45,9 +46,10 @@ export default function Home({ data1, data2, data3, data4, data5,data6 }) {
       </Head>
       <Hero />
       <Bestsellers />
+      {/* <ProductShorva /> */}
       <Product />
-      <ProductSecond  />
-      <ProductFourth  />
+      <ProductSecond />
+      <ProductFourth />
       <ProductFive />
     </>
   );

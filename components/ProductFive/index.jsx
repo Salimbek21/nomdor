@@ -7,19 +7,25 @@ export default function ProductFourth() {
     {
       name: "Кийма 100 гр (Молотый)",
       description: "",
-      price: "11 000",
+      price: "12 000",
       img: "/shashlik/qiyma.webp",
     },
     {
       name: "Жигар 100 гр",
       description: "",
-      price: "12 000",
+      price: "14 000",
       img: "/shashlik/jigar.webp",
     },
     {
       name: "Жаз 100 гр (Кусковой)",
       description: "Говядина",
-      price: "17 000",
+      price: "18 000",
+      img: "/shashlik/jaz.webp",
+    },
+    {
+      name: "Жаз 100 гр (Кусковой)",
+      description: "Баранина",
+      price: "20 000",
       img: "/shashlik/jaz.webp",
     },
     {
@@ -31,10 +37,9 @@ export default function ProductFourth() {
     {
       name: "Товук 100 гр (Курица)",
       description: "Филе",
-      price: "12 000",
+      price: "14 000",
       img: "/shashlik/tovuq.webp",
     },
-   
   ];
   return (
     <>

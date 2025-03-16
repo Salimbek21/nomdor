@@ -27,24 +27,24 @@ export default function ProductSecond() {
       price: "11 000",
       img: "/xitimg/sabzovotsomsa.webp",
     },
-    {
-      name: "Ковок сомса",
-      description: "",
-      price: "5 000",
-      img: "/xitimg/somsauch.webp",
-    },
+    // {
+    //   name: "Ковок сомса",
+    //   description: "",
+    //   price: "5 000",
+    //   img: "/xitimg/somsauch.webp",
+    // },
     {
       name: "Товук ва пишлокли сомса",
       description: "Курица с сыром",
       price: "7 000",
       img: "/xitimg/tovuqsomsa.webp",
     },
-    // {
-    //   name: "Кук сомса",
-    //   description: "Курица с сыром",
-    //   price: "5 000",
-    //   img: "/xitimg/tovuqsomsa.webp",
-    // },
+    {
+      name: "Кук сомса",
+      description: "",
+      price: "5 000",
+      img: "/xitimg/tovuqsomsa.webp",
+    },
   ];
   return (
     <>
