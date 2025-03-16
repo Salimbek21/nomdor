@@ -58,11 +58,12 @@ const Contacts = () => {
                   }}
                 >
                   <ZoomControl options={{ float: "right" }} />
-
                   <Placemark geometry={[41.280312, 69.198924]} />
                   <Placemark geometry={[41.370866, 69.313412]} />
                   <Placemark geometry={[41.292206, 69.221438]} />
                   <Placemark geometry={[41.304387, 69.280868]} />
+                  <Placemark geometry={[41.332503, 69.289941]} />
+                  41.332503, 69.289941
                 </Map>
               </YMaps>
             </div>
