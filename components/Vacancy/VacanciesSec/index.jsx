@@ -6,7 +6,11 @@ import cls from "./vacancy-sec.module.scss";
 
 const VacancySec = () => {
   const vacancies = [
-    { title: "Yetkazib beruvchi", description: "" },
+    {
+      title: "Yetkazib beruvchi",
+      description:
+        "- Piyoda, velosipedda / avtotransportda, mashinada - Toshkent shahrini yaxshi bilish - Android smartfoniga ega bo'lish - Aniqlik va mas'uliyat # - Buyurtmani o'z vaqtida yetkazib berish",
+    },
     { title: "Tozalovchi", description: "" },
     { title: "Ofitsiantlar", description: "" },
     { title: "Idish yuvuvchi", description: "" },
